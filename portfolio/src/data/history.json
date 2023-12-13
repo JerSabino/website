@@ -1,0 +1,26 @@
+[
+    {
+        "role": "Backend Software Developer",
+        "organization": "IBM Corporation",
+        "startDate": "Jan 2023",
+        "endDate": "Sept 2023",
+        "experiences": 
+        [
+            "Mitigated 20+ functional verification test (FVT) failures ahead of version release, meeting deadlines without delays.", 
+            "Contributed to migration of Red Hat Package Manager (RPM) in preparation for operating system upgrade to Red Hat Enterprise Linux (RHEL) 8."
+        ],
+        "imageSrc": "history/ibm.png"
+    },
+    {
+        "role": "Quality Assurance Engineer",
+        "organization": "IBM Corporation",
+        "startDate": "Jan 2021",
+        "endDate": "August 2021",
+        "experiences": 
+        [
+            "Formulated test plans for release of Python migration from v2 to v3 and secure boot.",
+            "Performed regression testing, ensuring stability of 4 new product version releases and identified"
+        ],
+        "imageSrc": "history/ibm.png"
+    }
+]
