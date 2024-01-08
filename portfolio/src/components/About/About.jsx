@@ -10,7 +10,7 @@ export const About = () => {
         <div className={styles.content}>
             <img 
                 className={styles.aboutImage}
-                src="https://placehold.co/300x300" 
+                src={getImageUrl("about/about.png")} 
                 alt="" 
             />
             <ul className={styles.aboutItems}>

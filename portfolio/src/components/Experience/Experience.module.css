@@ -2,7 +2,7 @@
 
 .container {
     color: var(--color-text);
-    margin: 79px 2% 0 2%;
+    margin: 79px 10% 0 10%;
 }
 
 .title {
@@ -31,7 +31,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 11px;
+    gap: 5px;
 }
 .skillImageContainer {
     background-color: var(--color-secondary);
@@ -39,8 +39,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 120px;
-    height: 120px;
+    width: 80px;
+    height: 80px;
 }
 .skill p {
     font-size: 25px;
@@ -62,7 +62,7 @@
     align-items: center;
     gap: 17px;
     background: #19376d;
-    background: linear-gradient(90deg, #19376d 0%, rgba(25, 55, 109, 0) 100%);
+    background: linear-gradient(90deg, #472f5b 0%, rgba(25, 55, 109, 0) 100%);
     border-radius: 10px;
     padding: 24px;
 }
@@ -95,6 +95,10 @@
 }
 
 @media screen and (max-width: 830px) {
+    .title {
+        text-align: center;
+    }
+
     .content {
         flex-direction: column;
         align-items: center;
