@@ -52,7 +52,9 @@
 
 /* Animation for the Image */
 .heroImage {
-    width: 50%;
+    object-fit: cover;
+    width: 45%;
+    height: 45%;
     z-index: 1;
 
     animation-name: floating;
