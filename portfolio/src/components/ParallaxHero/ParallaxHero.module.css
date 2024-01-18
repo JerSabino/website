@@ -1,0 +1,60 @@
+@import "../../vars.css";
+
+.frame {
+  border: 1px solid red;
+  height: 1080px;
+}
+
+.animation, .animation_layer {
+  width: 100%;
+  height: 100vh;
+  border: 1px solid green;
+}
+
+.animation {
+  display: block;
+  position: relative;
+  z-index: 10;
+}
+
+.animation_layer {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  width: 100%;
+}
+
+/* Layers */
+
+#layer1 {
+  background-image: url(../../../assets/layers/1x/layer1.png)
+}
+#layer2 {
+  background-image: url(../../../assets/layers/1x/layer2.png)
+}
+#layer3 {
+  background-image: url(../../../assets/layers/1x/layer3.png)
+}
+#layer4 {
+  background-image: url(../../../assets/layers/1x/layer4.png)
+}
+#stars1 {
+  background-image: url(../../../assets/layers/1x/stars1.png)
+}
+#stars2 {
+  background-image: url(../../../assets/layers/1x/stars2.png)
+}
+#stars3 {
+  background-image: url(../../../assets/layers/1x/stars3.png)
+}
+#space1 {
+  background-image: url(../../../assets/layers/1x/space1.png);
+  background-size: cover;
+}
+#space2 {
+  background-image: url(../../../assets/layers/1x/space2.png);
+  background-size: cover;
+}
+
+
+
