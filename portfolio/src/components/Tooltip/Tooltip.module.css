@@ -1,0 +1,33 @@
+@import "../../vars.css";
+
+.tooltip_container {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip {
+  position: absolute;
+  top: calc(-100% -50px);
+  transform: translateX(10%);
+  background-color: rgba(17, 4, 19, 0.9);
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  z-index: 1;
+
+  opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 0.2s;
+}
+
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}

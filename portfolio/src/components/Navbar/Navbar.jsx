@@ -1,5 +1,7 @@
 import React, {useState} from 'react';
 
+import { Tooltip } from "../Tooltip/Tooltip";
+
 import styles from "./Navbar.module.css";
 import {getImageUrl} from "../../utils";
 
@@ -24,11 +26,16 @@ export const Navbar = () => {
         <ul 
           className={`${styles.menuItems} ${menuOpen && styles.menuOpen}`}
           onClick={() => setMenuOpen(false)}
-        >
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+        > 
+          <Tooltip text={"About"}> 
+            <li><a href="#about">About</a></li>
+          </Tooltip>
+          <Tooltip text={"Experience"}>
+            <li><a href="#experience">Experience</a></li>
+          </Tooltip>
+          <Tooltip text={"Contact"}>  
+            <li><a href="#contact">Contact</a></li>
+          </Tooltip>
         </ul>
       </div>
     </nav>
