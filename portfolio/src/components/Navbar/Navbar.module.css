@@ -3,7 +3,6 @@
 .navbar {
   background: linear-gradient(0deg, rgba(23, 3, 29, 0.712), rgb(26, 1, 34));
   display: flex;
-  align-items: center;
   justify-content: space-between;
   padding: 5px 20px;
   z-index: 99;
@@ -35,17 +34,30 @@
   display: none;
 }
 
+#hamburger {
+  display: none;
+  font-size: 45px;
+  color: white;
+  cursor: pointer;
+}
+
+#icon {
+  font-size: 45px;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
 @media screen and (max-width: 830px) {
   .navbar {
     flex-direction: column;
-    align-items: flex-start;
     width: 100%;
+    padding: 10px 0px;
   }
 
   .menu {
     position: absolute;
     right: 0;
-    margin-right: 10%;
     flex-direction: column;
     align-items: flex-end;
     gap: 11px;
@@ -53,21 +65,20 @@
   }
 
   .menuBtn {
-    display: block;
+    display: flex;
     cursor: pointer;
   }
 
   .menuItems {
     display: none;
     flex-direction: column;
-    align-items: center;
     gap: 13px;
     border-radius: 10px; 
     background: rgb(25,55,109);
     background: linear-gradient(
       0deg,
-    rgba(30, 1, 37, 0.616) 0%, 
-    rgb(42, 24, 48) 100%
+    rgba(14, 2, 17, 0.616) 0%, 
+    rgb(8, 1, 10) 100%
     );
     padding: 24px 33px;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
@@ -76,5 +87,9 @@
   .menuOpen { 
     display: flex;
     z-index: 1;
+  }
+
+  #hamburger {
+    display: flex;
   }
 }

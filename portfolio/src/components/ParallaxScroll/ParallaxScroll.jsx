@@ -7,7 +7,7 @@ import styles from "./ParallaxScroll.module.css";
 export const ParallaxScroll = () => {
   
   return (
-      <ParallaxBanner
+      <ParallaxBanner id="hero"
         layers={[
           /* Space Background */
           { image: '../../../assets/layers/1x/webp/space3.webp', speed: 0 },
@@ -20,7 +20,7 @@ export const ParallaxScroll = () => {
           /* Headline */
           { speed: -5,
             translateY: [-35, -15],
-            scale: [1, 0.5],
+            scale: [1, 0.65],
             children: (
               <div className={styles.header}>
                 Hello!

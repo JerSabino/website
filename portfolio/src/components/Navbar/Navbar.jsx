@@ -10,31 +10,23 @@ export const Navbar = () => {
 
   return (
     <nav className={styles.navbar}>
-      <a className={styles.title} href="/">
-        Portfolio
-      </a>
+      <a class="material-symbols-outlined" href="#hero" id={styles['icon']}>home</a>
       <div className={styles.menu}>
-        <img 
-          className={styles.menuBtn} 
-          src={ 
-            menuOpen 
-              ? getImageUrl("nav/hamburgerCloseIcon.png")
-              : getImageUrl("nav/hamburgerIcon.png")} 
-          alt="menu-button" 
-          onClick={() => setMenuOpen(!menuOpen)}
-        />
+        { menuOpen 
+          ? <span class="material-symbols-outlined" id={styles['hamburger']} onClick={() => setMenuOpen(!menuOpen)}>menu</span>
+          : <span class="material-symbols-outlined" id={styles['hamburger']} onClick={() => setMenuOpen(!menuOpen)}>menu_open</span>}
         <ul 
           className={`${styles.menuItems} ${menuOpen && styles.menuOpen}`}
           onClick={() => setMenuOpen(false)}
         > 
           <Tooltip text={"About"}> 
-            <li><a href="#about">About</a></li>
+            <li><a class="material-symbols-outlined" href="#about" id={styles['icon']}>info</a></li>
           </Tooltip>
           <Tooltip text={"Experience"}>
-            <li><a href="#experience">Experience</a></li>
+            <li><a class="material-symbols-outlined" href="#experience" id={styles['icon']}>code</a></li>
           </Tooltip>
           <Tooltip text={"Contact"}>  
-            <li><a href="#contact">Contact</a></li>
+            <li><a class="material-symbols-outlined" href="#contact" id={styles['icon']}>mail</a></li>
           </Tooltip>
         </ul>
       </div>
