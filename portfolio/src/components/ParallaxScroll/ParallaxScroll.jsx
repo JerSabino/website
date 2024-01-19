@@ -1,6 +1,7 @@
 import React from 'react'
 
 import { ParallaxBanner } from 'react-scroll-parallax';
+import Typewriter from 'typewriter-effect';
 
 import styles from "./ParallaxScroll.module.css";
 
@@ -23,8 +24,15 @@ export const ParallaxScroll = () => {
             scale: [1, 0.65],
             children: (
               <div className={styles.header}>
-                Hello!
-              </div>
+                <Typewriter 
+                  options={{
+                    strings: ['Hello!', 'Hi!', 'Welcome!', 'Greetings!'],
+                    autoStart: true,
+                    delay: 250,
+                    loop: true,
+                  }}
+                />
+              </div> 
             )},
           /* Planets */
           { image: '../../../assets/layers/1x/webp/layer4.webp', speed: -15 },

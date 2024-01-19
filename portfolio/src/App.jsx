@@ -12,6 +12,10 @@ import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 
 function App() {
 
+  function Scrolldown() {
+      window.scroll(0,300); 
+  }
+
   return (
     <div className={styles.App}>
       <Headroom>
@@ -25,6 +29,9 @@ function App() {
       <Contact></Contact>
     </div>
   );
+  
+  window.onload = Scrolldown;
+  
 }
 
 export default App

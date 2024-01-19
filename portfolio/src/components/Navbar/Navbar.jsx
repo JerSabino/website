@@ -10,23 +10,25 @@ export const Navbar = () => {
 
   return (
     <nav className={styles.navbar}>
-      <a class="material-symbols-outlined" href="#hero" id={styles['icon']}>home</a>
+      <div>
+        <a className="material-symbols-outlined" href="#hero" id={styles['icon']}>home</a>
+      </div>
       <div className={styles.menu}>
         { menuOpen 
-          ? <span class="material-symbols-outlined" id={styles['hamburger']} onClick={() => setMenuOpen(!menuOpen)}>menu</span>
-          : <span class="material-symbols-outlined" id={styles['hamburger']} onClick={() => setMenuOpen(!menuOpen)}>menu_open</span>}
+          ? <span className="material-symbols-outlined" id={styles['hamburger']} onClick={() => setMenuOpen(!menuOpen)}>menu</span>
+          : <span className="material-symbols-outlined" id={styles['hamburger']} onClick={() => setMenuOpen(!menuOpen)}>menu_open</span>}
         <ul 
           className={`${styles.menuItems} ${menuOpen && styles.menuOpen}`}
           onClick={() => setMenuOpen(false)}
         > 
           <Tooltip text={"About"}> 
-            <li><a class="material-symbols-outlined" href="#about" id={styles['icon']}>info</a></li>
+            <li><a className="material-symbols-outlined" href="#about" id={styles['icon']}>info</a></li>
           </Tooltip>
           <Tooltip text={"Experience"}>
-            <li><a class="material-symbols-outlined" href="#experience" id={styles['icon']}>code</a></li>
+            <li><a className="material-symbols-outlined" href="#experience" id={styles['icon']}>code</a></li>
           </Tooltip>
           <Tooltip text={"Contact"}>  
-            <li><a class="material-symbols-outlined" href="#contact" id={styles['icon']}>mail</a></li>
+            <li><a className="material-symbols-outlined" href="#contact" id={styles['icon']}>mail</a></li>
           </Tooltip>
         </ul>
       </div>
