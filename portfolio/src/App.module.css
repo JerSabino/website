@@ -1,5 +1,9 @@
 @import "./vars.css";
 
+* {
+  cursor: none;
+}
+
 .App {
   background-color: var(--color-bg);
   width: 100%;
@@ -10,6 +14,15 @@
   overflow-y: hidden;
   
   color: rgb(0, 0, 0);
+}
+
+.cursor {
+  position: fixed;
+  background-color: rgb(255, 255, 255);
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  z-index: 9;
 }
 
 .headroom {

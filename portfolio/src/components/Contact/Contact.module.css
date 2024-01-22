@@ -48,25 +48,25 @@
 #icon {
     font-size: 50px;
     color: white;
-    cursor: pointer;
     text-decoration: none;
     
     transition-duration: 0.4s;
   }
 #icon:hover {
     color: rgb(225, 188, 255);
+    cursor: none;
 }
 
 #text {
     font-size: 30px;
     color: white;
-    cursor: pointer;
     text-decoration: none;
     
     transition-duration: 0.4s;
   }
 #text:hover {
     color: rgb(225, 188, 255);
+    cursor: none;
 }
 
 @media screen and (max-width: 830px) {

@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 
 import styles from './App.module.css'
 import Headroom from 'react-headroom'
@@ -13,17 +14,64 @@ import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 import { motion } from 'framer-motion';
 
 function App() {
+  const [mousePosition, setMousePosition] = useState({
+    x: 0,
+    y: 0
+  });
+
+  useEffect(() => {
+    const mouseMove = e => {
+      setMousePosition({
+        x: e.clientX - 8,
+        y: e.clientY - 8
+      })
+    }
+
+    window.addEventListener("mousemove", mouseMove);
+    
+    return () => {
+      window.removeEventListener("mousemove", mouseMove);
+    }
+  }, []);
+
+  const variants = {
+    default: {
+      x: mousePosition.x + 8,
+      y: mousePosition.y + 8,
+      mixBlendMode: "difference"
+    },
+    text: {
+      height: 50,
+      width: 50,
+      x: mousePosition.x + 25,
+      y: mousePosition.y + 25,
+    }
+  }
+
   return (
-    <div className={styles.App}>
-      <Headroom>
-        <Navbar></Navbar>
-      </Headroom>
-      <ParallaxProvider>
-        <ParallaxScroll></ParallaxScroll>
-      </ParallaxProvider>
-      <About></About>
-      <Experience></Experience>
-      <Contact></Contact>
+    <div>
+      <motion.div 
+        className={styles.cursor}
+        variants={variants}
+        animate="default"
+        transition={{
+          ease: "linear",
+          duration: 0
+        }}
+        id="cursor"
+      >
+      </motion.div>
+      <div className={styles.App}>
+        <Headroom>
+          <Navbar></Navbar>
+        </Headroom>
+        <ParallaxProvider>
+          <ParallaxScroll></ParallaxScroll>
+        </ParallaxProvider>
+        <About></About>
+        <Experience></Experience>
+        <Contact></Contact>
+      </div>
     </div>
   );
 }

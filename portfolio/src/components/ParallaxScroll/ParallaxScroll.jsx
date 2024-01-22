@@ -34,7 +34,6 @@ export const ParallaxScroll = () => {
       <ParallaxBanner id="hero"
         layers={[
           /* Space Background */
-          { image: '../../../assets/layers/1x/webp/space3.webp', speed: 0 },
           { image: '../../../assets/layers/1x/webp/space2.webp', speed: -5 },
           { image: '../../../assets/layers/1x/webp/space1.webp', speed: -20},
           /* Stars */

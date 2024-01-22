@@ -13,6 +13,7 @@
   align-items: center;
   font-size: 125px;
   color: rgb(255, 255, 255);
+  mix-blend-mode: difference;
 
   /* Disable user highlight selection */
   -webkit-user-select: none; 
