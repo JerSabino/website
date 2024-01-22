@@ -45,6 +45,30 @@
     letter-spacing: 1.5px;
 }
 
+#icon {
+    font-size: 50px;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    
+    transition-duration: 0.4s;
+  }
+#icon:hover {
+    color: rgb(225, 188, 255);
+}
+
+#text {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    
+    transition-duration: 0.4s;
+  }
+#text:hover {
+    color: rgb(225, 188, 255);
+}
+
 @media screen and (max-width: 830px) {
     .container {
         flex-direction: column;
