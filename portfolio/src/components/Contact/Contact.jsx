@@ -82,16 +82,16 @@ export const Contact = () => {
             >
                 <ul className={styles.links}>
                     <li className={styles.link}>
-                        <a className="material-symbols-outlined" href="mailto:jer.lsabino@gmail.com" id={styles["icon"]}>contact_mail</a>
+                        <a className="material-symbols-outlined" id={styles["icon"]}>contact_mail</a>
                         <a href="mailto:jer.lsabino@gmail.com" id={styles["text"]} target="_blank">jer.lsabino@gmail.com</a>
                     </li>
                     <li className={styles.link}>
-                        <img src="https://placehold.co/50x50" alt="LinkedIn Icon" />
-                        <a href="https://www.linkedin.com/in/jeremiah-sabino/" target="_blank">linkedin.com/jeremiah-sabino</a>
+                        <img src={getImageUrl('contact/linkedin.svg')} id={styles["icon"]} alt="LinkedIn Icon" />
+                        <a href="https://www.linkedin.com/in/jeremiah-sabino/" id={styles["text"]} target="_blank">linkedin.com/jeremiah-sabino</a>
                     </li>
                     <li className={styles.link}>
-                        <img src="https://placehold.co/50x50" alt="Github Icon" />
-                        <a href="https://www.github.com/JerSabino" target="_blank">github.com/JerSabino</a>
+                    <img src={getImageUrl('contact/github.svg')} id={styles["icon"]} alt="Github Icon" />
+                        <a href="https://www.github.com/JerSabino" id={styles["text"]} target="_blank">github.com/JerSabino</a>
                     </li>
                 </ul>
             </motion.div>

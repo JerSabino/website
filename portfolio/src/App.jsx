@@ -55,13 +55,12 @@ function App() {
         variants={variants}
         animate="default"
         transition={{
-          ease: "linear",
-          duration: 0
+          duration: 0.1
         }}
         id="cursor"
       >
       </motion.div>
-      <div className={styles.App}>
+      <div className={styles.App} id="home">
         <Headroom>
           <Navbar></Navbar>
         </Headroom>

@@ -12,6 +12,9 @@
     gap: 7%;
 }
 
+.text {
+    font-family: 'Space Mono', monospace;
+}
 .text h2 {
     font-size: 80px;
     font-weight: 700;
@@ -47,14 +50,10 @@
 
 #icon {
     font-size: 50px;
+    width: 50px;
+    border-radius: 10%;
     color: white;
     text-decoration: none;
-    
-    transition-duration: 0.4s;
-  }
-#icon:hover {
-    color: rgb(225, 188, 255);
-    cursor: none;
 }
 
 #text {
@@ -67,6 +66,13 @@
 #text:hover {
     color: rgb(225, 188, 255);
     cursor: none;
+}
+.path {
+    fill: white;
+    transition-duration: 0.4s;
+}
+.path:hover {
+    fill: rgb(225, 188, 255);
 }
 
 @media screen and (max-width: 830px) {

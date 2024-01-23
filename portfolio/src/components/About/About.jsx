@@ -28,7 +28,7 @@ export const About = () => {
             variants={onViewVariants}
             initial="offscreen"
             whileInView="onscreen"
-            viewport={{once: true}}>
+            viewport={{once: true, amount: 0.2}}>
             <section className={styles.container} id="about">
                 <div className={styles.content}>
                     <ul className={styles.aboutItems}>

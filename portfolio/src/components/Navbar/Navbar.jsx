@@ -11,7 +11,7 @@ export const Navbar = () => {
   return (
     <nav className={styles.navbar}>
       <div>
-        <a className="material-symbols-outlined" href="#hero" id={styles['icon']}>home</a>
+        <a className="material-symbols-outlined" href="#home" id={styles['icon']}>home</a>
       </div>
       <div className={styles.menu}>
         { menuOpen 
