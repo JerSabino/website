@@ -20,3 +20,53 @@
   -ms-user-select: none;
   user-select: none;
 }
+
+.arrow {
+  color: white;
+}
+
+.down_arrow {
+  top: calc(100vh - 80px);
+  left: calc(100% - 50px);
+  position: absolute;
+  width: 0;
+  height: 35px;
+  border: 2px solid;
+  border-radius: 2px;
+  animation: jumpInfinite 1.5s infinite;
+}
+
+.down_arrow:after {
+  content: " ";
+  position: absolute;
+  top: 12px;
+  left: -10px;
+  width: 16px;
+  height: 16px;
+  border-bottom: 4px solid;
+  border-right: 4px solid;
+  border-radius: 4px;
+  transform: rotateZ(45deg);
+}
+
+.scroll {
+  top: calc(100vh - 110px);
+  left: calc(100% - 80px);
+  position: absolute;
+  width: 0;
+  height: 35px;
+  border-radius: 2px;
+  animation: jumpInfinite 1.5s infinite;
+}
+
+@keyframes jumpInfinite {
+  0% {
+    margin-top: 0;
+  }
+  50% {
+    margin-top: 20px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}

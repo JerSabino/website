@@ -34,6 +34,10 @@ function App() {
     }
   }, []);
 
+  useEffect(() => {
+    window.history.scrollRestoration = 'manual'
+  }, []);
+
   const variants = {
     default: {
       x: mousePosition.x + 8,
@@ -55,7 +59,7 @@ function App() {
         variants={variants}
         animate="default"
         transition={{
-          duration: 0.1
+          duration: 0.0
         }}
         id="cursor"
       >

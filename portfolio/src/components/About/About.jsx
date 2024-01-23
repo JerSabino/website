@@ -35,7 +35,7 @@ export const About = () => {
                         <li className={styles.aboutItem}>
                             <img src="https://placehold.co/100x100" alt="" />
                             <div className={styles.aboutItemText}>
-                                <h3>Lorem ipsum</h3>
+                                <h3>Creative</h3>
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris feugiat, metus nec malesuada convallis
                                 </p>
@@ -45,7 +45,7 @@ export const About = () => {
                         <li className={styles.aboutItem}>
                             <img src="https://placehold.co/50x50" alt="" />
                             <div className={styles.aboutItemText}>
-                                <h3>Lorem ipsum</h3>
+                                <h3>Adaptable</h3>
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris feugiat, metus nec malesuada convallis
                                 </p>
@@ -55,7 +55,7 @@ export const About = () => {
                         <li className={styles.aboutItem}>
                             <img src="https://placehold.co/50x50" alt="" />
                             <div className={styles.aboutItemText}>
-                                <h3>Lorem ipsum</h3>
+                                <h3>Efficient</h3>
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris feugiat, metus nec malesuada convallis
                                 </p>
