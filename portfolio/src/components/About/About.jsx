@@ -30,36 +30,54 @@ export const About = () => {
             whileInView="onscreen"
             viewport={{once: true, amount: 0.2}}>
             <section className={styles.container} id="about">
+                <div className={styles.title}>
+                    my values
+                </div>
                 <div className={styles.content}>
                     <ul className={styles.aboutItems}>
                         <li className={styles.aboutItem}>
-                            <img src="https://placehold.co/100x100" alt="" />
-                            <div className={styles.aboutItemText}>
-                                <h3>Creative</h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris feugiat, metus nec malesuada convallis
-                                </p>
+                            <div className={styles.front}>
+                                <img className={styles.aboutImage} src="https://placehold.co/200x200" alt="" />
+                                <div>
+                                    <h3 className={styles.aboutItemText}>Continuous Learning</h3>
+                                </div>
                             </div>
+                            <p className={styles.desc}>
+                                I embrace a mindset of lifelong learning in the dynamic field of technology.
+                                <br />
+                                <br />
+                                Staying updated on the latest languages, tools, and methodologies is essential for my growth.
+                            </p> 
                         </li>
 
                         <li className={styles.aboutItem}>
-                            <img src="https://placehold.co/50x50" alt="" />
-                            <div className={styles.aboutItemText}>
-                                <h3>Adaptable</h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris feugiat, metus nec malesuada convallis
-                                </p>
+                            <div className={styles.front}>
+                                <img className={styles.aboutImage} src="https://placehold.co/200x200" alt="" />
+                                <div>
+                                    <h3 className={styles.aboutItemText}>User-Focused</h3>
+                                </div>
                             </div>
+                            <p className={styles.desc}>
+                                The needs and experiences of end-users in what I create is my utmost priority.
+                                <br />
+                                <br />
+                                I place high importance in intuitive interfaces, speed, and convenience to ensure a positive user-friendly experience.
+                            </p> 
                         </li>
 
                         <li className={styles.aboutItem}>
-                            <img src="https://placehold.co/50x50" alt="" />
-                            <div className={styles.aboutItemText}>
-                                <h3>Efficient</h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris feugiat, metus nec malesuada convallis
-                                </p>
+                            <div className={styles.front}>
+                                <img className={styles.aboutImage} src="https://placehold.co/200x200" alt="" />
+                                <div>
+                                    <h3 className={styles.aboutItemText}>Collaboration</h3>
+                                </div>
                             </div>
+                            <p className={styles.desc}>
+                                I recognize the value of effective communication and collaboration with people I work with.
+                                <br />
+                                <br />
+                                Always being open to feedback and willing to share knowledge with others is crucial to success of a project.
+                            </p> 
                         </li>
                     </ul>
                 </div>
