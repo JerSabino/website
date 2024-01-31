@@ -1,5 +1,27 @@
 @import "../../vars.css";
 
+.box {
+    padding: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+.banner_container {
+    height: 710px;
+    width: 1220px;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 10%;
+}
+
+.banner {
+    height: 100%;
+}
+
 .container {
     position: relative;
     text-align: center;
@@ -25,6 +47,7 @@
     position: relative;
     align-items: center;
     gap: 25px;
+    padding-bottom: 2%;
 }
 
 .aboutItems {
@@ -48,7 +71,6 @@
     -o-transition: all 400ms ease-out;
     -ms-transition: all 400ms ease-out;
     transition: all 400ms ease-out;
-    z-index: 2;
 
     width: calc(100% / 3);
 }
