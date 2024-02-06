@@ -24,17 +24,27 @@ export const About = () => {
           }
         }
     };
+
+    const parallaxVariants = {
+        offscreen: {
+          opacity: 0
+        },
+        onscreen: {
+          y: 0,
+          opacity: 1,
+          transition: {
+            duration: 1.5
+          }
+        }
+    };
     
     return (
         <motion.div id="about"
             variants={onViewVariants}
             initial="offscreen"
             whileInView="onscreen"
-            viewport={{once: true, amount: 0.2}}>
+            viewport={{once: true, amount: 0.1}}>
             <section className={styles.container}>
-                <div className={styles.title}>
-                    my values
-                </div>
                 <div className={styles.content}>
                     {/* VALUES */}
                     <ul className={styles.aboutItems}>
@@ -86,7 +96,7 @@ export const About = () => {
                 </div>
                 {/* PARALLAX BANNER */}
                 <motion.div id="about"
-                    variants={onViewVariants}
+                    variants={parallaxVariants}
                     initial="offscreen"
                     whileInView="onscreen"
                     viewport={{once: true, amount: 0.25}}>

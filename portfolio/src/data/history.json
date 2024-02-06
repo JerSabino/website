@@ -2,24 +2,83 @@
     {
         "role": "Backend Software Developer",
         "organization": "IBM Corporation",
-        "startDate": "Jan 2023",
-        "endDate": "Sept 2023",
+        "startDate": "JAN 2023",
+        "endDate": "SEPT 2023",
         "experiences": 
         [
-            "Mitigated 20+ functional verification test (FVT) failures ahead of version release, meeting deadlines without delays.", 
-            "Contributed to migration of Red Hat Package Manager (RPM) in preparation for operating system upgrade to Red Hat Enterprise Linux (RHEL) 8."
+            "Collaborated with cross-functional groups delivering product version releases within tight deadlines.", 
+            "Resolved defects using root cause investigation, reducing customer-facing bug tickets in team backlog 70%.",
+            "Refactored legacy code for improved internal efficiency and product consistency.",
+            "Upgraded system kernel, addressing security vulnerabilities."
+        ],
+        "tech":
+        [
+            "JavaScript", 
+            "Python",
+            "Shell Scripting",
+            "Rust",
+            "Red Hat Linux",
+            "VMware vSphere",
+            "Jenkins",
+            "Docker"
         ],
         "imageSrc": "history/ibm.png"
     },
     {
-        "role": "Quality Assurance Engineer",
+        "role": "Software Developer Intern",
         "organization": "IBM Corporation",
-        "startDate": "Jan 2021",
-        "endDate": "August 2021",
+        "startDate": "JAN 2022",
+        "endDate": "APR 2022",
+        "experiences": 
+        [
+            "Mitigated 20+ functional verification test (FVT) failures ahead of version release, meeting deadlines without delays.",
+            "Contributed to migration of RPMs (Red Hat Package Manager) in preparation for OS upgrade to Red Hat Enterprise Linux 8."
+        ],
+        "tech":
+        [
+            "JavaScript", 
+            "Shell Scripting",
+            "Red Hat Linux",
+            "VMware vSphere",
+            "Jenkins",
+            "Docker"
+        ],
+        "imageSrc": "history/ibm.png"
+    },
+    {
+        "role": "Quality Assurance Engineer Intern",
+        "organization": "IBM Corporation",
+        "startDate": "JAN 2021",
+        "endDate": "AUG 2021",
         "experiences": 
         [
             "Formulated test plans for release of Python migration from v2 to v3 and secure boot.",
-            "Performed regression testing, ensuring stability of 4 new product version releases and identified"
+            "Performed regression testing, ensuring stability of 4 new product version releases and identified / reported critical defects and inconsistencies for overall improved software quality."
+        ],
+        "tech":
+        [
+            "JavaScript", 
+            "Red Hat Linux",
+            "VMware vSphere",
+            "Jenkins"
+        ],
+        "imageSrc": "history/ibm.png"
+    },
+    {
+        "role": "Associate Software Engineer Intern",
+        "organization": "Introhive Services",
+        "startDate": "JAN 2020",
+        "endDate": "APR 2020",
+        "experiences": 
+        [
+            "Developed and revamped user interface (UI) components with Angular, enhancing overall product aesthetics.",
+            "Resolved 15+ customer-facing tickets ahead of schedule, elevating software quality and ensuring timely version releases."
+        ],
+        "tech":
+        [
+            "Ruby on Rails",
+            "AngularJS",
+            "UI Design"
         ],
         "imageSrc": "history/ibm.png"
     }

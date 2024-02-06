@@ -35,7 +35,7 @@ function App() {
       window.removeEventListener("mousemove", mouseMove);
     }
   }, []);
-
+  
   useEffect(() => {
     window.history.scrollRestoration = 'manual'
   }, []);
@@ -61,8 +61,7 @@ function App() {
         variants={variants}
         animate="default"
         transition={{
-          duration: 0.0,
-          type: "ease-out",
+          duration: 0.0
         }}
         id="cursor"
       >

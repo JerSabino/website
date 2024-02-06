@@ -1,8 +1,11 @@
 @import "../../vars.css";
 
 .container {
+    display: flex;
+    position: relative;
     color: var(--color-text);
-    margin: 79px 10% 0 10%;
+    width: 100%;
+    justify-content: center;
 }
 
 .title {
@@ -18,6 +21,7 @@
     flex-direction: row;
     justify-content: space-evenly;
     margin-top: 14px;
+    width: 100%;
 }
 
 .skills {
@@ -49,48 +53,83 @@
 }
 
 .history {
-    padding: 0;
-    width: 100%;
+    background-color: rgba(12, 12, 12, 0.6);
+    padding: 10px;
+    width: 90%;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
+    border-radius: 15px;
+}
+
+.leftSide {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);;
+    width: 10px;
+    height: 110%;
 }
 
 .historyItem {
     display: flex;
+    position: relative;
     flex-direction: row;
     align-items: center;
     gap: 17px;
-    background: #19376d;
-    background: linear-gradient(90deg, #472f5b 0%, rgba(25, 55, 109, 0) 100%);
+    width: 100%;
     border-radius: 10px;
-    padding: 24px;
+    padding: 15px;
+
+    transition: 0.5s;
 }
-.historyItem img {
-    width: 50px;
+.historyItem:hover {
+    background-color: rgba(55, 40, 59, 0.418);
 }
 
 .historyItemDetails {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     font-family: var(--font-roboto);
 }
 .historyItemDetails h3 {
-    font-size: 30px;
+    font-size: 23px;
     font-weight: 500;
 }
 .historyItemDetails p {
-    font-size: 20px;
+    color: rgb(112, 104, 119);
+    font-size: 13px;
     font-weight: 300;
+    letter-spacing: 2px;
 }
 .historyItemDetails ul {
-    margin: 6px 0 0 0px;
+    color: rgb(182, 175, 189);
+    margin: 3px 0 0 15px;
     padding: 0;
-    list-style-position: inside;
+    list-style-position: outside;
     font-size: 25px;
     list-style-type: disc;
 }
 
+.techBox {
+    margin-top: 10px;
+    height: 100%;
+    width: 100%;
+}
+.tech {
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(180, 168, 190);
+    display: inline-block;
+    padding: 10px;
+    line-height: 8px;
+    background-color: rgb(50, 28, 56);
+    margin: 2px;
+    border-radius: 9999px;
+}
+
 .historyInfo {
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 180;
 }
 

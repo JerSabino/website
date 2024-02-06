@@ -1,7 +1,6 @@
 @import "./vars.css";
 
 * {
-  cursor: none;
 }
 
 .App {
@@ -20,8 +19,10 @@
   pointer-events: none;
   position: fixed;
   background-color: rgb(255, 255, 255);
+  /*
   height: 16px;
   width: 16px;
+  */
   border-radius: 50%;
   z-index: 9;
 }
