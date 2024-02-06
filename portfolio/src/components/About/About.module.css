@@ -2,7 +2,6 @@
 
 .box {
     padding: 20px;
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -23,7 +22,6 @@
 }
 
 .container {
-    position: relative;
     text-align: center;
     background-color: rgba(12, 12, 12, 0.6);
     border-radius: 15px;
@@ -44,7 +42,6 @@
 
 .content {
     flex-direction: row;
-    position: relative;
     align-items: center;
     gap: 25px;
     padding-bottom: 2%;

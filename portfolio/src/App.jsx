@@ -14,6 +14,8 @@ import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 import { motion } from 'framer-motion';
 
 function App() {
+
+  /* Mouse Methods */
   const [mousePosition, setMousePosition] = useState({
     x: 0,
     y: 0
@@ -40,8 +42,8 @@ function App() {
 
   const variants = {
     default: {
-      x: mousePosition.x + 8,
-      y: mousePosition.y + 8,
+      x: mousePosition.x+4,
+      y: mousePosition.y+4,
       mixBlendMode: "difference"
     },
     text: {
@@ -59,7 +61,8 @@ function App() {
         variants={variants}
         animate="default"
         transition={{
-          duration: 0.0
+          duration: 0.0,
+          type: "ease-out",
         }}
         id="cursor"
       >
