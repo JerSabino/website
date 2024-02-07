@@ -65,7 +65,6 @@
   }
 #text:hover {
     color: rgb(225, 188, 255);
-    cursor: none;
 }
 .path {
     fill: white;

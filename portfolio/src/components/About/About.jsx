@@ -39,11 +39,11 @@ export const About = () => {
     };
     
     return (
-        <div>
+        <div id="about">
             <section className={styles.container}>
                 <div className={styles.content}>
                     {/* VALUES */}
-                    <motion.div id="about"
+                    <motion.div 
                         variants={onViewVariants}
                         initial="offscreen"
                         whileInView="onscreen"

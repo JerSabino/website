@@ -8,3 +8,13 @@
 html {
   scroll-behavior: smooth;
 }
+
+::-moz-selection { /* Code for Firefox */
+  color: rgb(255, 255, 255);
+  background: rgb(255, 166, 0);
+}
+
+::selection {
+  color: rgb(0, 0, 0);
+  background: rgb(195, 148, 226);
+}

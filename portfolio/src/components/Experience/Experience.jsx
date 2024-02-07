@@ -28,41 +28,20 @@ export const Experience = () => {
     return (
         <section className={styles.container} id="experience">
             <div className={styles.content}>
-                {/* Skills */}
-                {/*
-                    <div className={styles.skills}>{
-                        skills.map((skill, id) => {
-                            return (
-                                <div className={styles.skill} key={id}>
-                                    <div className={styles.skillImageContainer}>
-                                        <img src={getImageUrl(skill.imageSrc)} alt={skill.title} />
-                                    </div>
-                                    <p>{skill.title}</p>
-                                </div>
-                            );
-                        })
-                    }
-                    </div>
-                */}
                 {/* History */}
+                <div className={styles.box}>
+                    <img className={styles.aboutImage} src="https://placehold.co/400x800" alt="" />
+                </div>
                 <ul className={styles.history}>
                     {
                         history.map((historyItem, id) => {
                             return (
-                                <motion.div id="about"
+                                <motion.div id="experience"
                                     variants={onViewVariants}
                                     initial="offscreen"
                                     whileInView="onscreen"
                                     viewport={{once: true, amount: 0.1}}>
                                     <li className={styles.historyItem} key={id}>
-                                        <div className={styles.leftSide}>
-                                            {/*
-                                                <img 
-                                                    src={getImageUrl(historyItem.imageSrc)} 
-                                                    alt={`${historyItem.organization} Logo`}
-                                                />
-                                            */}
-                                        </div>
                                         <div className={styles.historyItemDetails}>
                                             <h3>{`${historyItem.role} • ${historyItem.organization}`}</h3>
                                             <p>{`${historyItem.startDate} - ${historyItem.endDate}`}</p>

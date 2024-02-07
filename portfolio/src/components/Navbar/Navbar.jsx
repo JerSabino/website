@@ -21,11 +21,11 @@ export const Navbar = () => {
           className={`${styles.menuItems} ${menuOpen && styles.menuOpen}`}
           onClick={() => setMenuOpen(false)}
         > 
-          <Tooltip text={"About"}> 
-            <li><a className="material-symbols-outlined" href="#about" id={styles['icon']}>info</a></li>
-          </Tooltip>
           <Tooltip text={"Experience"}>
             <li><a className="material-symbols-outlined" href="#experience" id={styles['icon']}>code</a></li>
+          </Tooltip>
+          <Tooltip text={"About"}> 
+            <li><a className="material-symbols-outlined" href="#about" id={styles['icon']}>info</a></li>
           </Tooltip>
           <Tooltip text={"Contact"}>  
             <li><a className="material-symbols-outlined" href="#contact" id={styles['icon']}>mail</a></li>

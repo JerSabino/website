@@ -73,8 +73,8 @@ function App() {
         <ParallaxProvider>
           <ParallaxScroll></ParallaxScroll>
         </ParallaxProvider>
-        <About></About>
         <Experience></Experience>
+        <About></About>
         <Contact></Contact>
       </div>
     </div>
