@@ -4,14 +4,29 @@
   height: 100vh;
 }
 
+.tvContainer {
+  position: absolute;
+  border: 1px solid blue;
+}
+
+.box {
+  position: absolute;
+  color: white;
+  border: 1px solid red;
+  top: 50%;
+  left: 25%;
+  width: 10%;
+  height: 10%;
+  transform: rotateY(75deg);
+
+}
+
 .header {
-  inset: 0;
-  padding-left: 4%;
-  justify-content: center;
-  align-items: center;
-  font-size: 125px;
+  position: absolute;
+  font-size:50px;
   color: rgb(255, 255, 255);
-  mix-blend-mode: difference;
+  z-index: 99999;
+  border: 1px solid red;
 
   /* Disable user highlight selection */
   -webkit-user-select: none; 
@@ -48,13 +63,59 @@
 }
 
 .scroll {
-  top: calc(100vh - 110px);
-  left: calc(100% - 70px);
-  position: absolute;
-  width: 0;
-  height: 35px;
-  border-radius: 2px;
-  animation: jumpInfinite 1.5s infinite;
+  height: 100%;
+  width: 100%;
+
+  border: 2px solid red;
+}
+
+.tv{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+
+  animation-name: floatingtv;
+  animation-duration: 3s;
+  animation-iteration-count: infinite; 
+  animation-timing-function: ease-in-out;
+  animation-delay: 500ms;
+}
+
+@keyframes floatingtv {
+    0% {
+        transform: translate(0, 0px);
+    }
+    50% {
+        transform: translate(0, 23px);
+    }
+    100% {
+        transform: translate(0, 0px);
+    }
+}
+
+.heroImage {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite; 
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+    0% {
+        transform: translate(0, 0px);
+    }
+    50% {
+        transform: translate(0, 20px);
+    }
+    100% {
+        transform: translate(0, -0px);
+    }
 }
 
 @keyframes jumpInfinite {
@@ -67,4 +128,17 @@
   100% {
     margin-top: 0;
   }
+}
+
+@keyframes scroll {
+	0% {
+		transform: translateY(0);
+	}
+	30% {
+		transform: translateY(100px);
+	}
+}
+
+svg #wheel {
+	animation: scroll ease 1.5s infinite;
 }

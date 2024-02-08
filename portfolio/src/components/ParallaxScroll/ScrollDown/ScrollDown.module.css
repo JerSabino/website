@@ -1,0 +1,111 @@
+#mouse-scroll {
+  style: block;
+}
+#mouse-scroll {
+  position: absolute;
+  margin: auto;
+  left: 50%;
+  bottom: 3%;
+  -webkit-transform: translateX(-50%);
+  z-index: 9999;
+}
+#mouse-scroll span{
+  display: block;
+  width: 10px; 
+  height: 10px;
+  -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+       transform: rotate(45deg);
+       transform: rotate(45deg);
+  border-right: 3px solid #fff3af; 
+  border-bottom: 3px solid #fff3af;
+  margin: 0 0 0px 8px;
+}
+#mouse-scroll .mouse {
+  height: 35px;
+  width: 25px;
+  border-radius: 13px;
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  border: 3px solid #ffffff;
+  top: 170px;
+}
+#mouse-scroll .downarrow1 {
+  margin-top: 6px;
+}
+#mouse-scroll .downarrow1, #mouse-scroll .downarrow2, #mouse-scroll .downarrow3 {
+  -webkit-animation: mouse-scroll 1s infinite; 
+    -moz-animation: mouse-scroll 1s infinite;
+}
+#mouse-scroll .downarrow1 {
+   -webkit-animation-delay: .1s; 
+   -moz-animation-delay: .1s;
+   -webkit-animation-direction: alternate;
+}
+#mouse-scroll .downarrow2 {
+  -webkit-animation-delay: .2s; 
+  -moz-animation-delay: .2s;
+  -webkit-animation-direction: alternate;
+}
+#mouse-scroll .downarrow3 {
+   -webkit-animation-delay: .3s;
+   -moz-animation-dekay: .3s;
+   -webkit-animation-direction: alternate;
+}
+#mouse-scroll .mousein {
+  height: 8px;
+  width: 4px;
+  display: block; 
+  margin: 5px 8px;
+  background: #ffffff;
+  position: relative;
+  border-radius: 2px;
+}
+#mouse-scroll .mousein {
+ -webkit-animation: animated-mouse 1.2s ease infinite;
+  -moz-animation: mouse-animated 1.2s ease infinite;
+}
+
+@-webkit-keyframes animated-mouse {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  50% {
+     opacity: 1;
+    -webkit-transform: translateY(6px);
+    -ms-transform: translateY(6px);
+    transform: translateY(6px);
+  }
+  100% {
+    opacity: 1;
+   -webkit-transform: translateY(0px);
+   -ms-transform: translateY(0px);
+   transform: translateY(0px);
+  } 
+}
+@-webkit-keyframes mouse-scroll {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .5;
+  }
+  100% {
+    opacity: 1;
+  } 
+}
+@keyframes mouse-scroll {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
