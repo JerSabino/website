@@ -58,15 +58,41 @@ export const ParallaxScroll = () => {
             { image: '../../../assets/layers/1x/webp/layer3.webp', speed: -15},
             { image: '../../../assets/layers/1x/webp/layer2.webp', speed: -5},
             { image: '../../../assets/layers/1x/layer1.png', speed: -2,
+              translateY:[5,-5],
               shouldAlwaysCompleteAnimation: true },
             { children: <img src='../../../assets/layers/1x/spaceman.png' className={styles.heroImage}/>, 
               speed:25,
               translateY:[5,-15]},
             { children: (
-                  <img src='../../../assets/layers/1x/tv.png' className={styles.tv}/>
+                <img src='../../../assets/layers/1x/sign.png' className={styles.tv}/>
               ), 
               speed: 20,
-              translateY:[5,-15]}
+              translateY:[8,-13]},
+            {/*
+            { children: (
+              <div className={styles.header}>
+                <Typewriter className={styles.text}
+                  options={{loop: true}}
+                  onInit={(typewriter) => {
+                    typewriter
+                    .pauseFor(1000)
+                    .typeString('Software Dev')
+                    .pauseFor(2000)
+                    .deleteChars(12)
+                    .typeString('Musician')
+                    .pauseFor(2000)
+                    .deleteChars(8)
+                    .typeString('Designer')
+                    .pauseFor(2000)
+                    .deleteChars(8)
+                    .start();
+                  }}
+                />
+              </div>
+            ),
+            speed: 20,
+            translateY: [28,40]}
+            */}
           ]}
           className={styles.banner}
         >
