@@ -3,114 +3,53 @@
 .container {
     display: flex;
     position: relative;
-    justify-content: space-between;
+    justify-content: center;
+
     color: var(--color-text);
     width: 100%;
+
+    margin-top: 40px;
 
     /* Disable user highlight selection */
     -webkit-user-select: none; 
     -ms-user-select: none;
     user-select: none;
 }
-
-.title {
-    color: var(--color-text);
-    font-size: 35px;
-    font-weight: 700;
-    letter-spacing: 1.75px;
-    text-transform: uppercase;
-}
-
-.bio {
-    background-color: rgba(12, 12, 12, 0.6);
-    display: flex;
-    flex-direction: column;
-    padding: 20px 15px 15px 15px;
-    text-align: center;
-    margin-top: 14px;
-    margin-left: 0.5%;
-    border-radius: 10px;
-    width: 500px; 
-    height: auto;
-}
-.bioImg {
-    height: 250px;
-    border-radius: 20px;
-}
-
-.bioIntro {
-    justify-content: center;
-    font-size: 20px;
-    margin-top: 5%;
-}
-
-.bioInfo {
-    background-color: rgba(55, 40, 59, 0.418);;
-    border-radius: 10px;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 100%;
-    text-align: left;
-    font-size: 14px;
-    margin-top: 5%;
-    line-height: 20px;
-}
-
-.name {
-    color:rgb(212, 169, 247);
-}
-
-.emphasis {
-    color: rgb(255, 213, 98);
-}
-
-.biocolor1 {
-    color: rgb(125, 207, 231);
-}
-.biocolor2 {
-    color: rgb(98, 255, 111);
-}
-
-a{
-    text-decoration: none;
-    transition-duration: 0.2s;
-}
-a:hover {
-    color: rgb(212, 169, 247);
-}
-
-.resume {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-}
-.button {
-    color: white;
-    padding: 10px;
-    border-radius: 30px;
-    background-color: rgb(104, 66, 119);
-
-    transition-duration: 0.2s;
-}
-.button:hover {
-    color: rgb(255, 255, 255);
-    background-color: rgb(81, 51, 94);
-}
-
 .content {
     background-color: rgba(12, 12, 12, 0.6);
+
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    position: relative;
+
+    width: 70%;
+
     margin-top: 14px;
     margin-left: 0.5%;
     margin-right: 0.5%;
-    border-radius: 10px;
-    width: 100%;
+    border-radius: 10px;   
+}
+.title {
+    display: flex;
+    position: absolute;
+    align-items: center;
+  
+    background-color: rgba(11, 6, 12, 0.74);
+  
+    font-family: 'Roboto Mono', monospace !important;
+    
+    border-radius: 2px;
+    padding: 0 5px 0 5px;
+    gap: 10px;
+    
+    top: -15px;
+  }
+.title h4 {
+    color: rgb(233, 227, 150);
+}
+.title h2 {
+    font-size: 1.8em;
 }
 
 .box {
@@ -131,6 +70,7 @@ a:hover {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin-top: 2%;
     gap: 5px;
     border-radius: 15px;
 }
@@ -209,47 +149,18 @@ a:hover {
 
     .container {
         flex-direction: column;
-        gap: 10px;
-    }
-
-    .bio {
-        flex-direction: row;
         align-items: center;
         justify-content: center;
-        gap: 20px;
-        padding: 25px;
-        width: 100%;
-        margin: 0;
-    }
-    .bioIntro {
-        text-align: left;
-        font-size: 24px;
-        margin: 0;
-    }
-    .bioInfo {
-        width: 100%;
-        font-size: 16px;
-        margin-top: 10px;
-    }
-    .imgBox {
-        display: flex;
-        width: 250px;
-    }
-    .resume {
-        margin-top: 5px;
-        text-align: left;
-        justify-content: left;
+        gap: 10px;
     }
 
     .content {
         align-items: center;
-        margin: 0;
         gap: 34px;
-        width: 100%;
+        width: 90%;
     }
 
     .box {
-        margin: 0;
         padding: 20px;
         width: 100%;
     }
@@ -257,24 +168,7 @@ a:hover {
     .history {
         width: 100%; 
         gap: 9px;
-    }
-}
-
-@media screen and (max-width: 830px) {
-    .bio {
-        flex-direction: column;
-        gap: 0px;
-    }
-    .bioIntro {
-        text-align: center;
-        margin-top: 2%;
-    }
-    .bioInfo {
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-    .resume {
-        text-align: center;
-        justify-content: center;
+        
+        margin-top: 5%;
     }
 }

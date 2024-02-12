@@ -58,7 +58,7 @@ export const ParallaxScroll = () => {
             { image: '../../../assets/layers/1x/webp/layer3.webp', speed: -15},
             { image: '../../../assets/layers/1x/webp/layer2.webp', speed: -5},
             { image: '../../../assets/layers/1x/layer1.png', speed: -2,
-              translateY:[5,-5],
+              translateY:[7,5],
               shouldAlwaysCompleteAnimation: true },
             { children: <img src='../../../assets/layers/1x/spaceman.png' className={styles.heroImage}/>, 
               speed:25,
@@ -103,7 +103,7 @@ export const ParallaxScroll = () => {
         animate={{opacity: 1}}
         transition={{
           duration: 0.4,
-          delay: 2.5
+          delay: 1
         }}
         style={{
           opacity: opacity,
