@@ -4,16 +4,10 @@
   background: linear-gradient(0deg, rgba(23, 3, 29, 0.712), rgb(26, 1, 34));
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 5px 20px;
   z-index: 99;
   width: 100%;
-}
-
-.title {
-  font-size: 30px;
-  font-weight: 600;
-  text-decoration: none;
-  color: var(--color-text);
 }
 
 .menu {
@@ -25,13 +19,24 @@
   list-style: none;
 }
 .menuItems a {
-  font-size: 25px;
   color: var(--color-text);
   text-decoration: none;
 }
 
 .menuBtn {
   display: none;
+}
+
+.number {
+  color: rgb(233, 227, 150);
+}
+.menuItem {
+  font-family: 'Roboto Mono', monospace !important;
+  font-size: 12px;
+}
+.menuItem:hover {
+  color: rgb(225, 188, 255);
+  cursor: pointer;
 }
 
 #hamburger {

@@ -97,7 +97,7 @@ export const About = () => {
                     </motion.div>
                 </div>
                 {/* PARALLAX BANNER */}
-                <motion.div id="about"
+                <motion.div
                     variants={parallaxVariants}
                     initial="offscreen"
                     whileInView="onscreen"

@@ -28,8 +28,8 @@ export const Bio = () => {
       variants={onViewVariants}
       initial="offscreen"
       whileInView="onscreen"
-      viewport={{once: true, amount: 0.1}}>
-      <div className={styles.container}>
+      viewport={{once: true, amount: 0.3}}>
+      <div className={styles.container} id="bio">
         <div className={styles.bio}>
           <div className={styles.title}>
             <h4>01.</h4>

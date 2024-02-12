@@ -6,9 +6,8 @@
   align-items: center;
   justify-content: center;
 
-  margin-top: 40px;
-
-  width: 100%;;
+  width: 100%;
+  height: 90vh;
 }
 
 .title {
@@ -16,7 +15,7 @@
   position: absolute;
   align-items: center;
 
-  background-color: rgba(11, 6, 12, 0.74);
+  background-color: rgba(11, 6, 12, 0.808);
 
   font-family: 'Roboto Mono', monospace !important;
   
@@ -39,7 +38,7 @@
 }
 
 .bio {
-  background-color: rgba(12, 12, 12, 0.6);
+  background-color: rgb(17, 11, 22);
 
   display: flex;
   position: relative;
@@ -61,8 +60,8 @@
   position: block;
   height: 250px;
   border-radius: 20px;
-  border-right: 5px solid rgb(104, 66, 119);
-  border-bottom: 5px solid rgb(104, 66, 119);
+  border-right: 5px solid rgb(63, 48, 68);
+  border-bottom: 5px solid rgb(63, 48, 68);
   
   z-index: 55;
 }
@@ -140,7 +139,7 @@ a:hover {
   
   .bio {
       flex-direction: column;
-      width: 90%;
+      width: 95%;
       gap: 0px;
   }
   .bioImg {

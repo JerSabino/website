@@ -1,5 +1,13 @@
 @import "../../vars.css";
 
+.primaryContainer {
+    display: flex;
+    position: relative;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+}
+
 .container {
     display: flex;
     position: relative;
@@ -8,15 +16,13 @@
     color: var(--color-text);
     width: 100%;
 
-    margin-top: 40px;
-
     /* Disable user highlight selection */
     -webkit-user-select: none; 
     -ms-user-select: none;
     user-select: none;
 }
 .content {
-    background-color: rgba(12, 12, 12, 0.6);
+    background-color: rgb(17, 11, 22);
 
     display: flex;
     flex-direction: row;
@@ -24,6 +30,7 @@
     position: relative;
 
     width: 70%;
+    height: 80%;
 
     margin-top: 14px;
     margin-left: 0.5%;
@@ -122,6 +129,7 @@
     width: 100%;
 }
 .tech {
+    font-family: 'Roboto Mono', monospace !important;
     font-size: 12px;
     font-weight: bold;
     color: rgb(180, 168, 190);
@@ -147,6 +155,9 @@
         text-align: center;
     }
 
+    .primaryContainer {
+        height: 100%;
+    }
     .container {
         flex-direction: column;
         align-items: center;
@@ -157,7 +168,7 @@
     .content {
         align-items: center;
         gap: 34px;
-        width: 90%;
+        width: 95%;
     }
 
     .box {
