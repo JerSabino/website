@@ -4,6 +4,10 @@
   height: 100vh;
 }
 
+.banner_portrait{
+  height: 100vh;
+}
+
 .tvContainer {
   position: absolute;
   border: 1px solid blue;
@@ -142,4 +146,8 @@
 
 svg #wheel {
 	animation: scroll ease 1.5s infinite;
+}
+
+@media screen and (max-width: 1370px) {
+
 }

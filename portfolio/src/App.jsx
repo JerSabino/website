@@ -11,6 +11,7 @@ import { Hero } from "./components/Hero/Hero"
 import { About } from "./components/About/About"
 import { Experience } from "./components/Experience/Experience"
 import { Contact } from "./components/Contact/Contact"
+import { End } from "./components/End/End"
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 import { motion } from 'framer-motion';
 
@@ -77,6 +78,7 @@ function App() {
         <Bio></Bio>
         <Experience></Experience>
         <About></About>
+        <End></End>
         <Contact></Contact>
       </div>
     </div>

@@ -2,14 +2,13 @@
 
 * {
 }
-
+/* #140C25 */
 .App {
   display: flex;
   flex-direction: column;
-  background-color: var(--color-bg);
+  background: linear-gradient(180deg, rgba(31,7,33,1) 0%, rgba(23,14,40,1) 90%);
   width: 100%;
   height: 100%;
-  margin: 0;
   padding: 0;
   overflow-x: hidden;
   overflow-y: hidden;
@@ -53,8 +52,8 @@
   transform: translateY(0%);
 }
 
-@media screen and (max-width: 830px){
+@media screen and (max-width: 1370px){
   .App {
-    gap: 30px;
+    gap: 50%;
   }
 }

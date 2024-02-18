@@ -96,68 +96,6 @@ export const About = () => {
                         </ul>
                     </motion.div>
                 </div>
-                {/* PARALLAX BANNER */}
-                <motion.div
-                    variants={parallaxVariants}
-                    initial="offscreen"
-                    whileInView="onscreen"
-                    viewport={{once: true, amount: 0.25}}>
-                    <div className={styles.box}>
-                        <div className={styles.banner_container}>
-                            <ParallaxProvider>
-                                <ParallaxBanner
-                                    layers={[
-                                        /* Sky, Stars, Moon */
-                                        { image: '../../../assets/about/layers/sky.webp',
-                                            translateY: [-20, 10]},
-                                        { image: '../../../assets/about/layers/stars.webp',
-                                            translateY: [1, 25]},
-                                        { image: '../../../assets/about/layers/moon.webp',
-                                            translateY: [1, 18]},
-                                        /* Mountains */
-                                        { image: '../../../assets/about/layers/mountain1.webp',
-                                            translateY: [-5, 4],
-                                            speed: 2},
-                                        { image: '../../../assets/about/layers/mountain2.webp',
-                                            translateY: [-5, 1],
-                                            speed: 2},
-                                        { image: '../../../assets/about/layers/mountain3.webp',
-                                            translateY: [-1.5],
-                                            speed: 0.3},
-                                        /* Trees */
-                                        { children: <img src='../../../assets/about/layers/reflection.webp' className={styles.water}/>,
-                                            translateY: [2, 0]},
-                                        { image: '../../../assets/about/layers/tree1.webp',
-                                            translateY: [0, 4],
-                                            speed: 0.5},
-                                        { image: '../../../assets/about/layers/tree2.webp',
-                                            translateY: [2.3, -1],
-                                            speed: 0.5},
-                                        { image: '../../../assets/about/layers/tree3.webp',
-                                            translateY: [3.3, -1.5],
-                                            speed: 3}, 
-                                        { image: '../../../assets/about/layers/tree4.webp',
-                                            translateY: [4, -3],
-                                            speed: 1.5},
-                                        /* Waterline */
-                                        { children: <img src='../../../assets/about/layers/waterline.webp' className={styles.water}/>,
-                                            translateY: [61,55]},
-                                        /* Boat */
-                                        { image: '../../../assets/about/layers/boat.webp',
-                                            translateY: [5, -8]},
-                                        /* Grass */
-                                        { image: '../../../assets/about/layers/grass1.png',
-                                            translateY: [18, -8]},
-                                        { image: '../../../assets/about/layers/grass2.png',
-                                            translateY: [14, -9.5]},
-                                    ]}
-                                    className={styles.banner}
-                                    >
-                                </ParallaxBanner>
-                            </ParallaxProvider>
-                        </div>  
-                    </div>
-                </motion.div>
             </section>
         </div>
     )

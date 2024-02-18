@@ -150,7 +150,7 @@
     font-weight: 180;
 }
 
-@media screen and (max-width: 1340px) {
+@media screen and (max-width: 1370px) {
     .title {
         text-align: center;
     }
@@ -168,7 +168,7 @@
     .content {
         align-items: center;
         gap: 34px;
-        width: 95%;
+        width: 90%;
     }
 
     .box {
