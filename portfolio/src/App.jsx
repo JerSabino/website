@@ -72,16 +72,19 @@ function App() {
         <Headroom>
           <Navbar></Navbar>
         </Headroom>
-        <ParallaxProvider>
-          <ParallaxScroll></ParallaxScroll>
-        </ParallaxProvider>
+        <div>
+          <ParallaxProvider>
+            <ParallaxScroll></ParallaxScroll>
+          </ParallaxProvider>
+        </div>
         <div className={styles.content}>
           <Bio></Bio>
           <Experience></Experience>
-          <About></About>
         </div>
-        <End></End>
-        <Contact></Contact>
+        <div>
+          <End></End>
+          <Contact></Contact>
+        </div>
       </div>
     </div>
   );

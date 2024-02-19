@@ -135,10 +135,11 @@ a:hover {
   background-color: rgb(81, 51, 94);
 }
 
-@media screen and (max-width: 1370px) {
+@media screen and (max-width: 1024px) {
   
   .container {
-    margin-top: 4%;
+    margin-top: 10%;
+    height: 100vh;
   }
   .bio {
       flex-direction: column;
@@ -159,5 +160,46 @@ a:hover {
   .resume {
       text-align: center;
       justify-content: center;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  
+  .container {
+      margin: 0;
+      height: 100vh;
+  }
+  .bio {
+      flex-direction: column;
+      width: 90%;
+      height: fit-content;
+      gap: 0px;
+  }
+  .bioImg {
+      height: 200px;
+  }
+  .bioIntro {
+      font-size: 1em;
+      margin-top: 4%;
+      justify-content: center;
+  }
+  .bioInfo {
+      font-size: 0.8em;
+      margin-top: 20px;
+      margin-bottom: 20px;
+  }
+  .resume {
+      text-align: center;
+      justify-content: center;
+  }
+  .title {
+    top: -13px;
+  }
+  .title h4 {
+    color: rgb(233, 227, 150);
+    font-size: 0.8em;
+  }
+  .title h2 {
+    font-size: 1.3em;
   }
 }
