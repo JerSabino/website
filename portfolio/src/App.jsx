@@ -75,9 +75,11 @@ function App() {
         <ParallaxProvider>
           <ParallaxScroll></ParallaxScroll>
         </ParallaxProvider>
-        <Bio></Bio>
-        <Experience></Experience>
-        <About></About>
+        <div className={styles.content}>
+          <Bio></Bio>
+          <Experience></Experience>
+          <About></About>
+        </div>
         <End></End>
         <Contact></Contact>
       </div>

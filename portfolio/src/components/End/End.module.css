@@ -4,5 +4,6 @@
 
 .banner {
   height: 100vh;
-  width: 800px;
+  width: 100%;
+  overflow: hidden;
 }

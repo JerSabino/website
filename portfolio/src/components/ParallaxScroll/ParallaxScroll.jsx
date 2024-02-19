@@ -10,11 +10,11 @@ import styles from "./ParallaxScroll.module.css";
 export const ParallaxScroll = () => {
   
   const [isDesktop, setDesktop] = useState(window.innerWidth > 1024);
-  const [isTablet, setTablet] = useState(window.innerWidth > 450);
+  const [isTablet, setTablet] = useState(window.innerWidth > 630);
 
   const updateMedia = () => {
     setDesktop(window.innerWidth > 1024);
-    setTablet(window.innerWidth > 450);
+    setTablet(window.innerWidth > 630);
   };
 
   useEffect(() => {
