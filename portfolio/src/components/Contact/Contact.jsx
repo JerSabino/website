@@ -7,7 +7,7 @@ import { getImageUrl } from '../../utils';
 
 const bottomSide = {
     offscreen: {
-      y: 100,
+      y: 50,
       opacity: 0
     },
     onscreen: {
@@ -56,46 +56,55 @@ const rightSide = {
 
 export const Contact = () => {
   return (
-    <motion.div
-        variants={bottomSide}
-        initial="offscreen"
-        whileInView="onscreen"
-        viewport={{once:true}}
-    >
-        <footer id="contact" className={styles.container}>
-            <motion.div
-                variants={leftSide}
-                initial="offscreen"
-                whileInView="onscreen"
-                viewport={{once:true}}
-            >
-                <div className={styles.text}>
-                    <h2>Contact</h2>
-                    <p>Reach out to me!</p>
-                </div>
-            </motion.div>
-            <motion.div
-                variants={rightSide}
-                initial="offscreen"
-                whileInView="onscreen"
-                viewport={{once:true}}
-            >
-                <ul className={styles.links}>
-                    <li className={styles.link}>
-                        {/*<a className="material-symbols-outlined" id={styles["icon"]}>contact_mail</a>*/}
-                        <a href="mailto:jer.lsabino@gmail.com" id={styles["text"]} target="_blank">jer.lsabino@gmail.com</a>
-                    </li>
-                    <li className={styles.link}>
-                        {/*<img src={getImageUrl('contact/linkedin.svg')} id={styles["icon"]} alt="LinkedIn Icon" />*/}
-                        <a href="https://www.linkedin.com/in/jeremiah-sabino/" id={styles["text"]} target="_blank">linkedin.com/jeremiah-sabino</a>
-                    </li>
-                    <li className={styles.link}>
-                      {/*<img src={getImageUrl('contact/github.svg')} id={styles["icon"]} alt="Github Icon" />*/}
-                        <a href="https://www.github.com/JerSabino" id={styles["text"]} target="_blank">github.com/JerSabino</a>
-                    </li>
-                </ul>
-            </motion.div>
-        </footer>
-    </motion.div>
+    <div>
+      <footer id="contact" className={styles.container}>
+          <motion.div
+              variants={bottomSide}
+              initial="offscreen"
+              whileInView="onscreen"
+              viewport={{once:true}}
+          >
+              <div className={styles.text}>
+                  <h2>Get in touch!</h2>
+                  <p>
+                    I'm currently looking for new opportunities so feel free to contact me with them or to even just say hi, and 
+                    I'll do my best to get back to you!
+                  </p>
+              </div>
+          </motion.div>
+          <motion.div
+              variants={bottomSide}
+              initial="offscreen"
+              whileInView="onscreen"
+              viewport={{once:true, amount: 0}}
+          >
+            <ul className={styles.links}>
+                <li className={styles.link}>
+                  <a href="https://www.linkedin.com/in/jeremiah-sabino/"> 
+                    <img src={getImageUrl('contact/linkedin.svg')} id={styles["icon"]} alt="LinkedIn Icon" />
+                  </a>
+                </li>
+                <li className={styles.link}>
+                  <a href="https://github.com/JerSabino">
+                    <img src={getImageUrl('contact/github.svg')} id={styles["icon"]} alt="Github Icon" />
+                  </a>
+                </li>
+            </ul>
+          </motion.div>
+          <motion.div
+              variants={bottomSide}
+              initial="offscreen"
+              whileInView="onscreen"
+              viewport={{once:true}}
+          >
+              <a className={styles.button} href="">
+                Say Hi!
+              </a>
+          </motion.div>
+      </footer>
+      <footer className={styles.author}>
+        Artwork and Website designed & created by Jeremiah Sabino 
+      </footer>
+    </div>
   )
 }

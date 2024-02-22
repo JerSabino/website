@@ -40,7 +40,7 @@ export const End = () => {
         variants={parallaxVariants}
         initial="offscreen"
         whileInView="onscreen"
-        viewport={{once: true, amount: 0.25}}>
+        viewport={{once: true, amount: 0.15}}>
         <div className={styles.box}>
             <ParallaxProvider>
               {
