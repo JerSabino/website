@@ -40,7 +40,7 @@ export const Bio = () => {
               <div className={styles.bioIntro}>
                 <br />
                 <h3>Hello! I'm <span className={styles.name}>Jeremiah Sabino 
-                👋🤓</span> </h3>           
+                👋</span> </h3>           
               </div>
               <div className={styles.bioInfo}>
                 <p>

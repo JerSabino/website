@@ -3,9 +3,13 @@
 .primaryContainer {
     display: flex;
     position: relative;
-    height: 90vh;
+    height: fit-content;
     justify-content: center;
     align-items: center;
+
+    margin-top: 3em;
+
+    border: 1px solid red;
 }
 
 .container {
@@ -29,7 +33,7 @@
     justify-content: space-evenly;
     position: relative;
 
-    width: 70%;
+    width: 95%;
     height: 80%;
 
     margin-top: 14px;
@@ -68,7 +72,7 @@
     margin-right: 0.5%;
     border-radius: 10px;
     padding: 10px 10px 10px 10px;
-    width: auto;
+    width: 100%;
 }
 
 .history {
@@ -162,59 +166,24 @@
         font-size: 0.8em;
     }
     .title h2 {
-        font-size: 1.3em;
+        font-size: 1.5em;
     }
 
-    .primaryContainer {
-        height: 100vh;
+    .historyItem {
+        padding: 0.3em;
     }
-    .container {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-    }
-
-    .content {
-        align-items: center;
-        gap: 34px;
-        width: 90%;
-    }
-
-    .box {
-        padding: 20px;
-        width: 100%;
-    }
-    
-    .history {
-        width: 100%; 
-        gap: 9px;
-        
-        margin-top: 5%;
-    }
-}
-
-@media screen and (max-width: 630px) {
-    .title {
-        text-align: center;
-    }
-
     .historyItemDetails h3 {
-        font-size: 1em;
+        font-size: 1.2em;
     }
     .historyItemDetails p {
-        font-size: 0.6em;
+        font-size: 0.75em;
     }
     .historyInfo {
-        font-size: 0.5em;
+        font-size: 0.6em;
     }
     .tech {
-        font-size: 0.5em;
-        padding: 5px;
-    }
-
-    .primaryContainer {
-        height: fit-content;
+        font-size: 0.65em;
+        padding: 0.6em;
     }
     .container {
         flex-direction: column;
@@ -225,8 +194,7 @@
 
     .content {
         align-items: center;
-        gap: 34px;
-        width: 90%;
+        width: 98%;
     }
 
     .box {
@@ -236,8 +204,7 @@
     
     .history {
         width: 100%; 
-        gap: 9px;
-        
-        margin-top: 5%;
+        margin-top: 1.5em;
+        gap: 1em;
     }
 }
