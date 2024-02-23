@@ -8,7 +8,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: fit-content;
+    height: auto;
     padding: 1.5em;
     gap: 2em;
     text-align: center;
@@ -27,8 +27,8 @@
 
 .text p {
     color: #e1cef0;
-    font-size: 1.4em;
-    width: 40%;
+    font-size: 1.3em;
+    width: 55%;
 }
 
 .button {

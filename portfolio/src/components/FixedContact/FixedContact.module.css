@@ -1,0 +1,29 @@
+
+.list {
+  display: flex;
+  position: fixed;
+  border: 1px solid white;
+  height: auto;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+}
+
+.link {
+  color: white;
+}
+
+#icon {
+  font-size: 50px;
+  width: 50px;
+  border-radius: 10%;
+  color: white;
+  text-decoration: none;
+  transition-duration: 0.5s;
+}
+#icon:hover {
+  filter: sepia(1) saturate(7.3) hue-rotate(0deg) brightness(1);
+  transform: translateY(-5px);                                  
+}
