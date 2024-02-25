@@ -69,17 +69,17 @@ export const ParallaxScroll = () => {
               { image: '../../../assets/layers/1x/webp/stars2.webp', speed: -18 },
               { image: '../../../assets/layers/1x/webp/stars3.webp', speed: -23 },
               /* Planets */
-              { image: '../../../assets/layers/1x/layer4.png', speed: -10},
+              { image: '../../../assets/layers/1x/webp/layer4.webp', speed: -10},
               { image: '../../../assets/layers/1x/webp/layer3.webp', speed: -15},
               { image: '../../../assets/layers/1x/webp/layer2.webp', speed: -5},
-              { image: '../../../assets/layers/1x/layer1.png', speed: -2,
+              { image: '../../../assets/layers/1x/webp/layer1.webp', speed: -2,
                 translateY:[7,5],
                 shouldAlwaysCompleteAnimation: true },
-              { children: <img src='../../../assets/layers/1x/spaceman.png' className={styles.heroImage}/>, 
+              { children: <img src='../../../assets/layers/1x/webp/spaceman.webp' className={styles.heroImage}/>, 
                 speed:25,
                 translateY:[5,-15]},
               { children: (
-                  <img src='../../../assets/layers/1x/sign.png' className={styles.tv}/>
+                  <img src='../../../assets/layers/1x/webp/sign.webp' className={styles.tv}/>
                 ), 
                 speed: 20,
                 translateY:[8,-13]}
