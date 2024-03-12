@@ -72,7 +72,7 @@
   background-color: rgba(26, 15, 29, 0.418);
   color: white;
 
-  height: 100%;
+  height: max-content;
   width: 100%;
   gap: 0.5em;
 
@@ -159,6 +159,37 @@
   transform: translateY(-4px);                                  
 }
 
+.techBox {
+  margin-top: 10px;
+  height: 100%;
+  width: 250px;
+  text-align: center;
+}
+.tech {
+  font-family: 'Roboto Mono', monospace !important;
+  font-size: 12px;
+  font-weight: bold;
+  color: rgb(180, 168, 190);
+  display: inline-block;
+  padding: 10px;
+  line-height: 8px;
+  background-color: rgb(50, 28, 56);
+  margin: 2px;
+  border-radius: 9999px;
+
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+#construction {
+  color: white;
+  font-size: 200px;
+}
+#construction:hover {
+  cursor: not-allowed;
+}
+
 @media screen and (max-width: 1024px) {
   .projectList {
     flex-direction: column;
@@ -214,6 +245,10 @@
   .projectTitle {
     font-size: 1em;
   }
+  
+  .techBox {
+    text-align: left;
+  }
 }
 
 @media screen and (max-width: 630px) {
@@ -252,5 +287,9 @@
 
   .links {
     justify-content: center;
+  }
+
+  .techBox {
+    text-align: center;
   }
 }

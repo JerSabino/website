@@ -47,10 +47,15 @@ export const Projects = () => {
                       whileInView="onscreen"
                       viewport={{once: true, amount: 0.1}}>
                       <li className={styles.projectItem} key={id}>
-                        <div className={styles.projectItemDetails}>
-                          <div >
-                            <img className={styles.projectImage} src="https://placehold.co/200x200" alt={projectItem.title}/>
-                          </div>
+                        <div className={styles.projectItemDetails}>{
+                          completed ? (
+                            <div >
+                              <img className={styles.projectImage} src={getImageUrl(`${projectItem.imageSrc}`)} alt={projectItem.title}/>
+                            </div>
+                          ) : (
+                            <a className="material-symbols-outlined" id={styles['construction']}>construction</a>
+                          )
+                        }
                           <div className={styles.info}> 
                             <div className={styles.links}> 
                             {
@@ -76,6 +81,13 @@ export const Projects = () => {
                             }
                             </div>
                             <p className={styles.projectDescription}>{`${projectItem.desc}`}</p>
+                            <div className={styles.techBox}>{
+                              projectItem.tech.map((tech, id) => {
+                                  return (
+                                      <li className={styles.tech} key={id}>{tech}</li>
+                                  );
+                              })}
+                            </div>
                           </div>
                         </div>
                       </li>

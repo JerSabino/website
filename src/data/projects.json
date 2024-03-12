@@ -5,7 +5,13 @@
       "demo_link": "https://taskit-bd9e.onrender.com",
       "completed": true,
       "github_link": "https://github.com/JerSabino/taskit",
-      "imageSrc": "history/ibm.png"
+      "tech": [
+        "ExpressJS",
+        "ReactJS", 
+        "MongoDB",
+        "TailwindCSS"
+      ],
+      "imageSrc": "projects/taskit.png"
   },
   {
     "title": "Amazon ChatBot",
@@ -13,7 +19,10 @@
     "demo_link": "N/A",
     "completed": false,
     "github_link": "https://github.com/JerSabino/taskit",
-    "imageSrc": "history/ibm.png"
+    "tech": [
+      "Amazon Connect"
+    ],
+    "imageSrc": "projects/construction.png"
   },
   {
     "title": "Hike Hive",
@@ -21,6 +30,10 @@
     "demo_link": "N/A",
     "completed": false,
     "github_link": "https://github.com/JerSabino/taskit",
-    "imageSrc": "history/ibm.png"
+    "tech": [
+      "ExpressJS",
+      "MongoDB"
+    ],
+    "imageSrc": "projects/construction.png"
   }
 ]

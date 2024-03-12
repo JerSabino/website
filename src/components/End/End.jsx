@@ -174,11 +174,11 @@ export const End = () => {
                         shouldDisableScalingTranslations: true},
                       /* Waterline */
                       { image: '../../../assets/about/630/reflection.png',
-                        speed: 5,
+                        speed: 4.5,
                         shouldAlwaysCompleteAnimation: true,
                         shouldDisableScalingTranslations: true},
                       { image: '../../../assets/about/630/waterline.png',
-                        speed: 6,
+                        speed: 5,
                         shouldAlwaysCompleteAnimation: true,
                         shouldDisableScalingTranslations: true},
                       /* Boat */
