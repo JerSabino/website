@@ -36,6 +36,11 @@ export const Bio = () => {
               <h4>01.</h4>
               <h2>About Me</h2>
             </div>
+            <div>
+              <div className={styles.imgBox}>
+                  <img className={styles.bioImg} src={getImageUrl('bio/self.JPG')} alt="" />
+              </div>
+            </div>
             <div className={styles.infoBox}>
               <div className={styles.bioIntro}>
                 <br />
@@ -61,11 +66,6 @@ export const Bio = () => {
                   </a>
                 </div>
                 */}
-              </div>
-            </div>
-            <div>
-              <div className={styles.imgBox}>
-                  <img className={styles.bioImg} src={getImageUrl('bio/self.JPG')} alt="" />
               </div>
             </div>
           </div>

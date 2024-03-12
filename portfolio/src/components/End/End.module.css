@@ -6,3 +6,13 @@
   aspect-ratio: 16 / 9;
   overflow: hidden;
 }
+
+.banner_tablet {
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+}
+
+.banner_phone {
+  aspect-ratio: 9 / 16;
+  overflow: hidden;
+}

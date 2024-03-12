@@ -69,7 +69,7 @@
 
   align-items: center;
 
-  background-color: rgba(55, 40, 59, 0.418);
+  background-color: rgba(26, 15, 29, 0.418);
   color: white;
 
   height: 100%;
@@ -79,7 +79,13 @@
   padding: 1em;
 
   border-radius: 10px;
+
+  transition-duration: 0.5s;
 }
+.projectItemDetails:hover {
+  background-color: rgba(55, 40, 59, 0.418);
+}
+
 
 .info {
   display: flex;
@@ -102,6 +108,7 @@
 }
 
 .projectLink {
+  display: inline-block;
 
   font-size: 1.5em;
   margin-right: 0.25em;

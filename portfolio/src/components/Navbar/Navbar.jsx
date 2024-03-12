@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 
 import { Tooltip } from "../Tooltip/Tooltip";
+import { MdMenu } from "react-icons/md";
+import { MdMenuOpen } from "react-icons/md";
 
 import styles from "./Navbar.module.css";
 import {getImageUrl} from "../../utils";

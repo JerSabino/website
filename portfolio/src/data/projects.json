@@ -2,7 +2,7 @@
   {
       "title": "TaskIt",
       "desc": "Taskit is a full-stack web app to assign and create tasks for members in a team",
-      "demo_link": "taskit-bd9e.onrender.com",
+      "demo_link": "https://taskit-bd9e.onrender.com",
       "completed": true,
       "github_link": "https://github.com/JerSabino/taskit",
       "imageSrc": "history/ibm.png"
