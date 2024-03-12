@@ -23,7 +23,7 @@ export const Navbar = () => {
         > 
           <li><a className={styles.menuItem} href="#bio"><span className={styles.number}>01.</span> About</a></li>
           <li><a className={styles.menuItem} href="#experience"><span className={styles.number}>02.</span> Experience</a></li>
-          <li><a className={styles.menuItem} href="#about"><span className={styles.number}>03.</span> Projects</a></li>
+          <li><a className={styles.menuItem} href="#projects"><span className={styles.number}>03.</span> Projects</a></li>
         </ul>
       </div>
     </nav>

@@ -48,7 +48,8 @@ export const Experience = () => {
                                                 variants={onViewVariants}
                                                 initial="offscreen"
                                                 whileInView="onscreen"
-                                                viewport={{once: true, amount: 0.1}}>
+                                                viewport={{once: true, amount: 0.1}}
+                                                key={id}>
                                                 <li className={styles.historyItem} key={id}>
                                                     <div className={styles.historyItemDetails}>
                                                         <h3>{`${historyItem.role}`}</h3>

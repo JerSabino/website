@@ -1,0 +1,26 @@
+[
+  {
+      "title": "TaskIt",
+      "desc": "Taskit is a full-stack web app to assign and create tasks for members in a team",
+      "demo_link": "taskit-bd9e.onrender.com",
+      "completed": true,
+      "github_link": "https://github.com/JerSabino/taskit",
+      "imageSrc": "history/ibm.png"
+  },
+  {
+    "title": "Amazon ChatBot",
+    "desc": "A chatbot that simulates a call center workflow using Amazon Connect",
+    "demo_link": "N/A",
+    "completed": false,
+    "github_link": "https://github.com/JerSabino/taskit",
+    "imageSrc": "history/ibm.png"
+  },
+  {
+    "title": "Hike Hive",
+    "desc": "A fullstack web app that allows users to log and leave reviews on nature trails that they have hiked",
+    "demo_link": "N/A",
+    "completed": false,
+    "github_link": "https://github.com/JerSabino/taskit",
+    "imageSrc": "history/ibm.png"
+  }
+]

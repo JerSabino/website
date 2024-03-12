@@ -1,0 +1,249 @@
+@import "../../vars.css";
+
+.primaryContainer {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+
+  height: 90vh;
+
+  margin-top: 3em;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  background-color: rgb(17, 11, 22);
+
+  padding: 1em;
+
+  border-radius: 10px;
+}
+
+.title {
+  display: flex;
+  position: absolute;
+  align-items: center;
+
+  background-color: rgba(11, 6, 12, 0.74);
+
+  font-family: 'Roboto Mono', monospace !important;
+  
+  border-radius: 2px;
+  padding: 0 5px 0 5px;
+  gap: 10px;
+  
+  top: -20px;
+}
+.title h4 {
+  color: rgb(233, 227, 150);
+}
+.title h2 {
+  color: white;
+  font-size: 1.8em;
+}
+
+.projectList {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  position: relative;
+  width: 100%;
+  gap: 1.5em;
+  margin-top: 1em;
+}
+
+.projectItem {
+  height: 100%;
+  position: relative;
+  list-style-type: none;
+}
+
+.projectItemDetails {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  background-color: rgba(55, 40, 59, 0.418);
+  color: white;
+
+  height: 100%;
+  width: 100%;
+  gap: 0.5em;
+
+  padding: 1em;
+
+  border-radius: 10px;
+}
+
+.info {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3em;
+}
+
+.links {
+  position: relative;
+}
+
+.projectImage {
+  border-radius: 10px;
+  width: max-content;
+  height: 200px;
+  overflow: hidden;
+}
+
+.projectLink {
+
+  font-size: 1.5em;
+  margin-right: 0.25em;
+
+  transition-duration: 0.5s;
+  color: white;
+}
+.projectLink:hover {
+  transform: translateY(-4px); 
+  color: #FFFF91;
+}
+
+.unfinished {
+  pointer-events: none;
+  color: #4f4b53;
+  margin-right: 0.25em;
+  font-size: 1.5em;
+}
+
+.projectDescription {
+  text-align: center;
+  color: rgb(182, 175, 189);
+  width: 200px;
+}
+
+.githubLink {
+  justify-content: center;
+  align-items: center;
+}
+
+.githubLinkUnfinished {
+  pointer-events: none;
+  filter: brightness(0) saturate(100%) invert(31%) sepia(10%) saturate(354%) hue-rotate(227deg) brightness(91%) contrast(93%);
+}
+
+#icon {
+  font-size: 20px;
+  width: 1em;
+  border-radius: 10%;
+  color: white;
+  text-decoration: none;
+  transition-duration: 0.5s;
+  line-height: 2em;
+}
+
+#icon:hover {
+  filter: sepia(1) saturate(7.3) hue-rotate(0deg) brightness(1);
+  transform: translateY(-4px);                                  
+}
+
+@media screen and (max-width: 1024px) {
+  .projectList {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .primaryContainer {
+    display: flex;
+    margin-top: 5em;
+    height: auto;
+  }
+
+  .projectItem {
+    width: 100%;
+  }
+
+  .projectItemDetails {
+    flex-direction: row;
+    gap: 1em;
+    width: 90vw;
+    padding: 0.8em;
+  }
+
+  .projectDescription {
+    text-align: left;
+    width: 100%;
+  } 
+
+  .projectList {
+    width: 100%;
+  }
+
+  .links {
+    align-items: start;
+    justify-content: start;
+    width: 100%;
+  }
+
+  .info {
+    text-align: left;
+    align-items: start;
+    flex-direction: column;
+
+    width: 100%;
+  }
+
+  .projectImage {
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .projectTitle {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .title {
+    top: -13px;
+  }
+  .title h4 {
+      color: rgb(233, 227, 150);
+      font-size: 0.8em;
+  }
+  .title h2 {
+      font-size: 1.5em;
+  }
+
+  .primaryContainer {
+    display: flex;
+    margin-top: 5em;
+    height: auto;
+  }
+
+  .projectItemDetails {
+    flex-direction: column;
+    padding: 1em;
+    gap: 0.5em;
+  }
+
+  .projectDescription {
+    text-align: center;
+  }
+
+  .info {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .links {
+    justify-content: center;
+  }
+}
