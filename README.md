@@ -1,8 +1,22 @@
-# React + Vite
+# Jeremiah Sabino - Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+https://www.jsabino.dev
 
-Currently, two official plugins are available:
+## About
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Code repository of my portfolio website.
+
+**Built with:** ReactJS and Vite
+
+All artwork created by me
+
+*V1 of website released: March 13 2024*
+
+### Known Issues and Future Plans
+
+- **Issue:** Performance issues on tablet and phone devices concerning the parallax scrolling
+  - **Possible Solution:** Render less layers on tablet and phone devices 
+
+
+- **Issue:** Sudden loading popup upon page load on tablet and phone devices
+  - **Possible Solution:** Initial loading screen before render
