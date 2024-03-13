@@ -58,7 +58,7 @@ export const Bio = () => {
                   I'm a recent <a href="https://www.unb.ca" target="_blank">UNB</a> graduate (Class of 2022) and have always had an interest in all things tech-related.
                 </p>
                 <p>
-                  I've had the privellege of working as an intern for <a href="https://www.introhive.com/" target="_blank">a Client Intelligence Platform</a>, and then as an intern and eventual fulltime
+                  I've had the privillege of working as an intern for <a href="https://www.introhive.com/" target="_blank">a Client Intelligence Platform</a>, and then as an intern and eventual fulltime
                   employee for <a href="https://www.ibm.com/ca-en" target="_blank">a giant technology corporation</a>. Currently, my main focus is towards looking for new work!
                 </p>
                 <p>
