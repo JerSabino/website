@@ -6,6 +6,8 @@
 
 html {
   scroll-behavior: smooth;
+  
+  background-color:#170E28;
 }
 
 ::-moz-selection { /* Code for Firefox */
