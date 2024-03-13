@@ -55,7 +55,7 @@ export const Bio = () => {
               <div className={styles.bioInfo}>
                 <p>
                   I am a Software Engineer with a heavy focus on creative design to build exceptional digital experiences.
-                  I'm a recent <a href="https://www.unb.ca" target="_blank">UNB</a> graduate (Class of 2022) and have always had an interest in all things tech-related.
+                  Growing up I have always had an interest in all things tech-related.
                 </p>
                 <p>
                   I've had the privillege of working as an intern for <a href="https://www.introhive.com/" target="_blank">a Client Intelligence Platform</a>, and then as an intern and eventual fulltime
