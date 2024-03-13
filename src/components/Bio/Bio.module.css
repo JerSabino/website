@@ -34,6 +34,7 @@
 
 
 .infoBox {
+  margin-top: -3em;
   position: relative;
 }
 
@@ -46,7 +47,7 @@
   justify-content: center;
   
   width: 1000px;
-  height: auto;
+  height: max-content;
 
   color: white;
   text-align: center;
@@ -56,16 +57,51 @@
   gap: 30px;
 }
 
-.bioImg {
-  position: block;
-  height: 250px;
-  border-radius: 20px;
-  border-right: 5px solid rgb(63, 48, 68);
-  border-bottom: 5px solid rgb(63, 48, 68);
+.imgBox {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  height: max-content;
   
-  z-index: 55;
+  margin-bottom: 1.5em;
 }
 
+.bioImg {
+  position: block;
+  height: 225px;
+  margin-top: 2em;
+  border-radius: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.63);
+  transition-duration: 0.2s;
+}
+.bioImg:hover {
+  border-color: rgb(250, 209, 148);
+  transform: translateY(-2px);   
+}
+
+.resume {
+  display: flex;
+  width: 100%;
+  align-items: start;
+  text-align: left;
+  justify-content: center;
+}
+
+.button {
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1.5px solid rgba(255, 255, 255, 0.63);
+
+  transition-duration: 0.2s;
+}
+.button:hover {
+  color: rgb(250, 209, 148);
+  border-color: rgb(250, 209, 148);
+  transform: translateY(-2px);   
+}
 .bioIntro {
   display: flex;
   text-align: left;
@@ -113,26 +149,6 @@ a:hover {
   color: rgb(212, 169, 247);
 }
 
-.resume {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-}
-.button {
-  color: white;
-  padding: 10px;
-  border-radius: 30px;
-  background-color: rgb(104, 66, 119);
-
-  transition-duration: 0.2s;
-}
-.button:hover {
-  color: rgb(255, 255, 255);
-  background-color: rgb(81, 51, 94);
-}
-
 @media screen and (max-width: 1024px) {
   
   .container {
@@ -144,10 +160,16 @@ a:hover {
       width: 98%;
       height: auto;
       padding: 0.5em;
-      gap: 1em;
+      gap: 0em;
   }
   .infoBox {
       width: 100%;
+      margin-top: 0.5em;
+  }
+  .imgBox {
+    gap: 15px;
+
+    margin-bottom: 0;
   }
   .bioImg {
       height: 15em;

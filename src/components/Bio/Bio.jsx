@@ -38,7 +38,12 @@ export const Bio = () => {
             </div>
             <div>
               <div className={styles.imgBox}>
-                  <img className={styles.bioImg} src={getImageUrl('bio/self.JPG')} alt="" />
+                <img className={styles.bioImg} src={getImageUrl('bio/self.JPG')} alt="" />
+                <div className={styles.resume}>
+                  <a className={styles.button} href={getImageUrl('SabinoJeremiah_Resume.pdf')} download="SabinoJeremiah-Resume.pdf">
+                    Download Resume
+                  </a>
+                </div>
               </div>
             </div>
             <div className={styles.infoBox}>
@@ -59,13 +64,6 @@ export const Bio = () => {
                 <p>
                   If I'm not brushing up on my coding skills, you'd often see me producing music or designing as a side-hobby.
                 </p>
-                {/*
-                <div className={styles.resume}>
-                  <a className={styles.button} href="../../../assets/SabinoJeremiah-Resume.pdf" download="SabinoJeremiah-Resume.pdf">
-                    Download Resume
-                  </a>
-                </div>
-                */}
               </div>
             </div>
           </div>

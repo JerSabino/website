@@ -60,16 +60,6 @@ function App() {
 
   return (
     <div>
-      <motion.div 
-        className={styles.cursor}
-        variants={variants}
-        animate="default"
-        transition={{
-          duration: 0.0
-        }}
-        id="cursor"
-      >
-      </motion.div>
       <div className={styles.App} id="home">
         <Headroom>
           <Navbar></Navbar>

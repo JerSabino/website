@@ -29,7 +29,7 @@ export const Projects = () => {
         variants={onViewVariants}
         initial="offscreen"
         whileInView="onscreen"
-        viewport={{once: true, amount: 0.3}}>
+        viewport={{once: true, amount: 0.1}}>
         <div className={styles.primaryContainer} id="projects">
           <div className={styles.container}>
             <div className={styles.title}>

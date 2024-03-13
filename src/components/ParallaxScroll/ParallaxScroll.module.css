@@ -10,13 +10,11 @@
 
 .tvContainer {
   position: absolute;
-  border: 1px solid blue;
 }
 
 .box {
   position: absolute;
   color: white;
-  border: 1px solid red;
   top: 50%;
   left: 25%;
   width: 10%;
@@ -29,7 +27,6 @@
   color: rgb(255, 255, 255);
   z-index: 99999;
   width: 100%;
-  border: 1px solid red;
   text-align: center;
   font-size: 450%;
 
@@ -70,8 +67,6 @@
 .scroll {
   height: 100%;
   width: 100%;
-
-  border: 2px solid red;
 }
 
 .tv{

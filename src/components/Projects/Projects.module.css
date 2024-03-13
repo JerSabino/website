@@ -127,6 +127,9 @@
   margin-right: 0.25em;
   font-size: 1.5em;
 }
+.unfinished:hover {
+  color: #4f4b53;
+}
 
 .projectDescription {
   text-align: center;
@@ -142,6 +145,9 @@
 .githubLinkUnfinished {
   pointer-events: none;
   filter: brightness(0) saturate(100%) invert(31%) sepia(10%) saturate(354%) hue-rotate(227deg) brightness(91%) contrast(93%);
+}
+.githubLinkUnfinished:hover {
+  cursor: not-allowed;
 }
 
 #icon {
