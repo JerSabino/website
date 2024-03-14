@@ -20,3 +20,6 @@ All artwork created by me
 
 - **Issue:** Sudden loading popup upon page load on tablet and phone devices
   - **Possible Solution:** Initial loading screen before render
+
+- **Issue:** Codebase contains unused assets and components
+  - **Solution:** Refactor code by deleting unused assets and components as well as ensuring better clarity with folder structure for components.

@@ -14,6 +14,19 @@
       "imageSrc": "projects/taskit.png"
   },
   {
+    "title": "Portfolio Website",
+    "desc": "V1 of my personal portfolio website that you're currently viewing!",
+    "demo_link": "https://www.jsabino.dev",
+    "completed": true,
+    "github_link": "https://github.com/JerSabino/website",
+    "tech": [
+      "ReactJS",
+      "Vite",
+      "Figma"
+    ],
+    "imageSrc": "projects/website.png"
+  },
+  {
     "title": "Amazon ChatBot",
     "desc": "A chatbot that simulates a call center workflow using Amazon Connect",
     "demo_link": "N/A",
