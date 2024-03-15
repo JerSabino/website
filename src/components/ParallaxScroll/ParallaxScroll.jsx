@@ -64,26 +64,23 @@ export const ParallaxScroll = () => {
           <ParallaxBanner id="hero"
             layers={[
               /* Space Background */
-              { image: `${getImageUrl("layers/1x/webp/space2.webp")}`, speed: -5, shouldDisableScalingTranslations: true},
-              { image: `${getImageUrl("layers/1x/webp/space1.webp")}`, speed: -20, shouldDisableScalingTranslations: true},
+              { image: `${getImageUrl("layers/1x/space1.png")}`, speed: -20, shouldDisableScalingTranslations: true},
               /* Stars */
-              { image: `${getImageUrl("layers/1x/webp/stars1.webp")}`, speed: -25, shouldDisableScalingTranslations: true},
-              { image: `${getImageUrl("layers/1x/webp/stars2.webp")}`, speed: -18, shouldDisableScalingTranslations: true},
-              { image: `${getImageUrl("layers/1x/webp/stars3.webp")}`, speed: -23, shouldDisableScalingTranslations: true},
+              { image: `${getImageUrl("layers/1x/stars1.png")}`, speed: -25, shouldDisableScalingTranslations: true},
               /* Planets */
-              { image: `${getImageUrl("layers/1x/webp/layer4.webp")}`, speed: -10, shouldDisableScalingTranslations: true},
-              { image: `${getImageUrl("layers/1x/webp/layer3.webp")}`, speed: -15, shouldDisableScalingTranslations: true},
-              { image: `${getImageUrl("layers/1x/webp/layer2.webp")}`, speed: -5, shouldDisableScalingTranslations: true},
-              { image: `${getImageUrl("layers/1x/webp/layer1.webp")}`, 
+              { image: `${getImageUrl("layers/1x/layer4.png")}`, speed: -10, shouldDisableScalingTranslations: true},
+              { image: `${getImageUrl("layers/1x/layer3.png")}`, speed: -15, shouldDisableScalingTranslations: true},
+              { image: `${getImageUrl("layers/1x/layer2.png")}`, speed: -5, shouldDisableScalingTranslations: true},
+              { image: `${getImageUrl("layers/1x/layer1.png")}`, 
                 speed: -2, 
                 translateY:[7,5],
                 shouldAlwaysCompleteAnimation: true,
                 shouldDisableScalingTranslations: true},
-              { children: <img src={getImageUrl("layers/1x/webp/spaceman.webp")} className={styles.heroImage}/>, 
+              { children: <img src={getImageUrl("layers/1x/spaceman.png")} className={styles.heroImage}/>, 
                 speed:25,
                 translateY:[5,-15], shouldDisableScalingTranslations: true},
               { children: (
-                  <img src={getImageUrl("layers/1x/webp/sign.webp")} className={styles.tv}/>
+                  <img src={getImageUrl("layers/1x/sign.png")} className={styles.tv}/>
                 ), 
                 speed: 20,
                 translateY:[8,-13],
