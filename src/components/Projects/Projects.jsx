@@ -64,7 +64,7 @@ export const Projects = () => {
                                   <a className={styles.projectLink} href={projectItem.demo_link}>
                                     {`${projectItem.title}`}
                                   </a>
-                                  <a className={styles.githubLink} href="https://github.com/JerSabino/taskit">
+                                  <a className={styles.githubLink} href={`${projectItem.github_link}`}>
                                     <img src={getImageUrl('contact/github.svg')} id={styles["icon"]} alt="Github Icon" />
                                   </a>
                                 </>
@@ -73,7 +73,7 @@ export const Projects = () => {
                                   <a className={styles.unfinished}>
                                     {`${projectItem.title}`}
                                   </a>
-                                  <span className={styles.githubLinkUnfinished} href="https://github.com/JerSabino/taskit">
+                                  <span className={styles.githubLinkUnfinished} href={`${projectItem.github_link}`}>
                                     <img src={getImageUrl('contact/github.svg')} id={styles["icon"]} alt="Github Icon" />
                                   </span>
                                 </>
