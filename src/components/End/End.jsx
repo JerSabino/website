@@ -54,7 +54,7 @@ export const End = () => {
                         speed: 10,
                         shouldAlwaysCompleteAnimation: true,
                         shouldDisableScalingTranslations: true},
-                      { image: `${getImageUrl("about/layers2/stars2.png")}`,
+                      { image: `${getImageUrl("about/layers2/stars.png")}`,
                         translateY: [1, 25],
                         shouldAlwaysCompleteAnimation: true,
                         shouldDisableScalingTranslations: true},
