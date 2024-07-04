@@ -40,7 +40,7 @@ export const Bio = () => {
               <div className={styles.imgBox}>
                 <img className={styles.bioImg} src={getImageUrl('bio/self.JPG')} alt="" />
                 <div className={styles.resume}>
-                  <a className={styles.button} href={getImageUrl('SabinoJeremiah_Resume.pdf')} download="SabinoJeremiah-Resume.pdf">
+                  <a className={styles.button} href={getImageUrl('JeremiahSabino_Resume.pdf')} download="JeremiahSabino_Resume.pdf">
                     Download Resume
                   </a>
                 </div>
@@ -54,15 +54,20 @@ export const Bio = () => {
               </div>
               <div className={styles.bioInfo}>
                 <p>
-                  I am a Software Engineer with a heavy focus on creative design to build exceptional digital experiences.
+                  I am a Software Engineer with a knack for all things creative. Experienced in 
+                  <a className={styles.skill1}> software</a>,
+                  <a className={styles.skill2}> music</a>, and 
+                  <a className={styles.skill3}> art</a>, 
+                  I aspire to bring those
+                  skills together to create video games.
                   Growing up I have always had an interest in all things tech-related.
                 </p>
                 <p>
                   I've had the privillege of working as an intern for <a href="https://www.introhive.com/" target="_blank">a Client Intelligence Platform</a>, and then as an intern and eventual fulltime
-                  employee for <a href="https://www.ibm.com/ca-en" target="_blank">a giant technology corporation</a>. Currently, my main focus is towards looking for new work!
+                  employee for <a href="https://www.ibm.com/ca-en" target="_blank">a giant technology corporation</a>. Currently, my main focus is towards looking for new opportunities!
                 </p>
                 <p>
-                  If I'm not brushing up on my coding skills, you'd often see me producing music or designing as a side-hobby.
+                  If I'm not brushing up on my coding skills, you'd often see me producing music, creating small game demos, or designing as a side-hobby.
                 </p>
               </div>
             </div>

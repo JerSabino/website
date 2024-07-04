@@ -6,10 +6,9 @@
         "endDate": "SEPT 2023",
         "experiences": 
         [
-            "Collaborated with cross-functional groups delivering product version releases within tight deadlines.", 
-            "Resolved defects using root cause investigation, reducing customer-facing bug tickets in team backlog 70%.",
-            "Refactored legacy code for improved internal efficiency and product consistency.",
-            "Upgraded system kernel, addressing security vulnerabilities."
+            "Wrote python and shell scripts for Red Hat Linux systems to auto-blacklist outdated kernel modules, aligning with stringent security protocols.",
+            "Debugged and resolved .iso and .sfs package issues for SIEM software on Linux, utilizing VMWare virtual environments.",
+            "Resolved defects using root cause investigation, reducing customer facing bug tickets in team backlog 70% across five product version releases."
         ],
         "tech":
         [
@@ -31,8 +30,9 @@
         "endDate": "APR 2022",
         "experiences": 
         [
-            "Mitigated 20+ functional verification test (FVT) failures ahead of version release, meeting deadlines without delays.",
-            "Contributed to migration of RPMs (Red Hat Package Manager) in preparation for OS upgrade to Red Hat Enterprise Linux 8."
+            "Developed automation tests written in Groovy to ensure continuous verification of product functionality.",
+            "Contributed to a project-wide intiative to prepare the SIEM product to run in an upgraded Red Hat OS environment.",
+            "Utilized the Jenkins CI/CD pipeline, Jira, and VMWare to ensure on time delivery of version releases."
         ],
         "tech":
         [
@@ -52,8 +52,9 @@
         "endDate": "AUG 2021",
         "experiences": 
         [
-            "Formulated test plans for release of Python migration from v2 to v3 and secure boot.",
-            "Performed regression testing, ensuring stability of 4 new product version releases and identified / reported critical defects and inconsistencies for overall improved software quality."
+            "Formulated and delivered presentations for test plans in preparation for the release of Python version migration and Secure Boot feature.",
+            "Performed regression testing, enhancing stability of 4 new product version releases and identified/reported critical defects and inconsistencies for improved software quality",
+            "Configured Linux system environments to support various test scenarios for Red Hat installation and patches."
         ],
         "tech":
         [
@@ -71,8 +72,9 @@
         "endDate": "APR 2020",
         "experiences": 
         [
-            "Developed and revamped user interface (UI) components with Angular, enhancing overall product aesthetics.",
-            "Resolved 15+ customer-facing tickets ahead of schedule, elevating software quality and ensuring timely version releases."
+            "Developed an internal front-end Angular component library to standardize and re-use components across all front-end projects.",
+            "Contributed to the development and maintenance as a backend developer, executing feature implementations and bug fixes.",
+            "Assisted in the formulation and execution of test-cases prior to a new release for quality assurance purposes."
         ],
         "tech":
         [

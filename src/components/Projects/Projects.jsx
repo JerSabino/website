@@ -56,17 +56,19 @@ export const Projects = () => {
                             <a className="material-symbols-outlined" id={styles['construction']}>construction</a>
                           )
                         }
-                          <div className={styles.info}> 
-                            <div className={styles.links}> 
-                            {
+                          <div className={styles.info}>
+                            <div className={styles.links}>
+                            {/*
                               completed ? (
                                 <>
+                            */}
                                   <a className={styles.projectLink} href={projectItem.demo_link}>
                                     {`${projectItem.title}`}
                                   </a>
                                   <a className={styles.githubLink} href={`${projectItem.github_link}`}>
                                     <img src={getImageUrl('contact/github.svg')} id={styles["icon"]} alt="Github Icon" />
                                   </a>
+                            {/*
                                 </>
                               ) : (
                                 <>
@@ -79,6 +81,7 @@ export const Projects = () => {
                                 </>
                               )
                             }
+                            */}
                             </div>
                             <p className={styles.projectDescription}>{`${projectItem.desc}`}</p>
                             <div className={styles.techBox}>{

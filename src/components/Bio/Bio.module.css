@@ -149,6 +149,16 @@ a:hover {
   color: rgb(212, 169, 247);
 }
 
+.skill1 {
+  color: rgb(128, 221, 255);
+}
+.skill2 {
+  color: rgb(106, 255, 150);
+}
+.skill3 {
+  color: rgb(254, 120, 120);
+}
+
 @media screen and (max-width: 1024px) {
   
   .container {

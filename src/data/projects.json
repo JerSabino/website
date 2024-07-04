@@ -27,25 +27,14 @@
     "imageSrc": "projects/website.png"
   },
   {
-    "title": "Amazon ChatBot",
-    "desc": "A chatbot that simulates a call center workflow using Amazon Connect",
-    "demo_link": "N/A",
+    "title": "2D Platformer",
+    "desc": "A 2D Platformer currently being developed in Unreal Engine using the PaperZD plugin",
+    "demo_link": "https://github.com/JerSabino/Platformer2D",
     "completed": false,
-    "github_link": "https://github.com/JerSabino/taskit",
+    "github_link": "https://github.com/JerSabino/Platformer2D",
     "tech": [
-      "Amazon Connect"
-    ],
-    "imageSrc": "projects/construction.png"
-  },
-  {
-    "title": "Hike Hive",
-    "desc": "A fullstack web app that allows users to log and leave reviews on nature trails that they have hiked",
-    "demo_link": "N/A",
-    "completed": false,
-    "github_link": "https://github.com/JerSabino/taskit",
-    "tech": [
-      "ExpressJS",
-      "MongoDB"
+      "Unreal Engine",
+      "PaperZD"
     ],
     "imageSrc": "projects/construction.png"
   }
